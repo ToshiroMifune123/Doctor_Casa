@@ -1,0 +1,2076 @@
+﻿import random
+import time
+
+P1
+* E 8 años
+* S Femenino
+* O Estudiante
+* D Parálisis cerebral / Fisioterapia
+* D Síndrome de Down / Terapia ocupacional
+* D Síndrome de Rett / Terapia multidisciplinaria
+* E Mutaciones en el gen MECP2. Retraso en el desarrollo, pérdida del habla, movimientos repetitivos de las manos, problemas respiratorios, convulsiones.
+* F Manejo de síntomas (anticonvulsivos, terapia ocupacional, fisioterapia, terapia del habla), apoyo nutricional y respiratorio, manejo del dolor.
+* R "Mamá dice que al principio era una bebé normal, balbuceaba y me reía. Pero luego, como al año y medio, empecé a hacer cosas raras con las manos, como lavarlas todo el tiempo. Y dejé de hablar, aunque entiendo todo lo que me dicen. A veces me cuesta respirar y me dan como ataques, me asusto mucho..."
+P2
+* E 52 años
+* S Masculino
+* O Abogado
+* D Depresión / Antidepresivos
+* D Enfermedad de Alzheimer / Donepezilo
+* D Enfermedad de Alexander / Cuidados paliativos
+* E Acumulación de proteína GFAP en el cerebro. Deterioro neurológico progresivo, problemas de movimiento, convulsiones, retraso mental.
+* F Manejo de síntomas (anticonvulsivos, medicamentos para la espasticidad, terapia física), apoyo nutricional y respiratorio, atención psicológica.
+* R "Todo empezó con torpeza al caminar, como si estuviera borracho. Luego, empecé a hablar mal, como si tuviera la lengua dormida. Mis colegas pensaban que estaba estresado por el trabajo. Ahora, apenas puedo moverme y me cuesta pensar con claridad. Mi esposa dice que soy como un niño otra vez..."
+P3
+* E 34 años
+* S Femenino
+* O Enfermera
+* D Síndrome del intestino irritable / Dieta baja en FODMAP
+* D Enfermedad de Crohn / Corticosteroides
+* D Enfermedad de Gaucher / Terapia de reemplazo enzimático
+* E Deficiencia de la enzima glucocerebrosidasa. Acumulación de glucocerebrósidos en órganos y tejidos, causando agrandamiento del hígado y el bazo, problemas óseos, anemia, fatiga.
+* F Reemplaza la enzima faltante, reduciendo la acumulación de glucocerebrósidos y mejorando los síntomas.
+* R "Siempre he sido delgada, pero últimamente mi abdomen está muy hinchado, parece que estuviera embarazada. Y me canso mucho, incluso con las tareas más sencillas. Mis compañeros de trabajo dicen que estoy pálida y que debería tomar vitaminas. A veces me duelen los huesos, como si tuviera gripe..."
+P4
+* E 21 años
+* S Masculino
+* O Estudiante
+* D Asma / Inhaladores
+* D Fibrosis quística / Fisioterapia
+* D Síndrome de Marfan / Control cardiovascular y seguimiento
+* E Mutaciones en el gen FBN1. Afecta el tejido conectivo, causando problemas cardíacos (dilatación aórtica), oculares (luxación del cristalino), esqueléticos (extremidades largas, escoliosis).
+* F Control de la presión arterial, prevención de aneurismas aórticos, corrección quirúrgica de problemas oculares y esqueléticos.
+* R "Siempre he sido alto y delgado, con brazos y piernas largas. Mis amigos me llaman 'zancudo'. En el colegio me iba bien en básquet, pero a veces me cansaba mucho y me dolía el pecho. Últimamente, me he dado cuenta de que veo borroso de lejos. Mi mamá dice que necesito anteojos, pero me preocupa que sea algo más..."
+P5
+* E 45 años
+* S Femenino
+* O Secretaria
+* D Hipotiroidismo / Levotiroxina
+* D Síndrome de ovario poliquístico / Anticonceptivos
+* D Síndrome de Cushing / Cirugía para extirpar el tumor
+* E Exceso de cortisol. Aumento de peso, debilidad muscular, presión arterial alta, cambios en la piel (estrías, moretones), osteoporosis, diabetes.
+* F La extirpación del tumor que produce cortisol normaliza los niveles hormonales y revierte los síntomas.
+* R "En el último año, he subido mucho de peso, especialmente en la cara y el abdomen. Me siento cansada todo el tiempo, y me salen moretones con facilidad. Mi médico dice que puede ser el estrés del trabajo o la menopausia, pero no estoy convencida..."
+P6
+* E 12 años
+* S Masculino
+* O Estudiante
+* D Distrofia muscular de Becker / Fisioterapia
+* D Miopatía congénita / Terapia ocupacional
+* D Distrofia muscular de Duchenne / Corticosteroides
+* E Mutación en el gen DMD. Debilidad muscular progresiva, pérdida de la capacidad de caminar, problemas respiratorios y cardíacos.
+* F Retrasa la progresión de la debilidad muscular, mejora la función pulmonar y cardíaca.
+* R "Me encantaba jugar fútbol con mis amigos, pero últimamente me canso muy rápido y me caigo con frecuencia. Mis piernas se sienten débiles, como si fueran de gelatina. Mamá dice que estoy creciendo muy rápido, pero me preocupa que sea algo más serio..."
+P7
+* E 65 años
+* S Femenino
+* O Jubilada
+* D Demencia senil / Memantina
+* D Enfermedad de Alzheimer / Donepezilo
+* D Enfermedad de Creutzfeldt-Jakob / Cuidados paliativos
+* E Priones infecciosos. Deterioro neurológico rápido, demencia, problemas de movimiento, cambios de comportamiento.
+* F Manejo de síntomas (anticonvulsivos, medicamentos para la espasticidad), apoyo nutricional y respiratorio, atención psicológica.
+* R "Al principio, solo eran pequeños olvidos, como dónde dejaba las llaves o el nombre de algún vecino. Pero luego empecé a tener problemas para hablar, y a veces me confundía y no reconocía a mis propios hijos. Ahora, casi no puedo moverme ni hablar, y me siento muy confundida..."
+P8
+* E 28 años
+* S Masculino
+* O Arquitecto
+* D Esquizofrenia / Antipsicóticos
+* D Trastorno bipolar / Estabilizadores del ánimo
+* D Síndrome de Moebius / Cirugía reconstructiva
+* E Parálisis facial congénita. Debilidad o parálisis de los músculos faciales, dificultad para sonreír, fruncir el ceño, cerrar los ojos.
+* F Mejora la apariencia facial y la función de los músculos faciales.
+* R "Nací con una cara diferente. No puedo sonreír ni fruncir el ceño, y me cuesta cerrar los ojos completamente. De niño, me llamaban 'cara de palo' y me sentía muy mal. Ahora, estoy considerando la cirugía para tener una cara más normal..."
+P9
+* E 39 años
+* S Femenino
+* O Maestra
+* D Menopausia precoz / Terapia hormonal
+* D Síndrome de fatiga crónica / Antidepresivos
+* D Hipopituitarismo congénito / Terapia hormonal de reemplazo
+* E Deficiencia de una o más hormonas pituitarias. Retraso del crecimiento, pubertad tardía o ausente, problemas de fertilidad, fatiga, baja presión arterial.
+* F Reemplaza las hormonas faltantes, mejorando el crecimiento, el desarrollo sexual, la fertilidad y la energía.
+* R "Siempre fui más baja que mis amigas, y mi desarrollo fue más lento. Nunca tuve la menstruación, y los médicos no encontraban la causa. Ahora, me siento cansada todo el tiempo y tengo problemas para concentrarme. Me preocupa que nunca pueda tener hijos..."
+P10
+* E 19 años
+* S Masculino
+* O Estudiante
+* D Síndrome del túnel carpiano / Férula de muñeca
+* D Artritis reumatoide / Metotrexato
+* D Sarcoma de Ewing / Quimioterapia y cirugía
+* E Cáncer que afecta los huesos y tejidos blandos. Dolor óseo, hinchazón, fiebre, fatiga, pérdida de peso.
+* F Destruye las células cancerosas, reduce el tamaño del tumor y previene la propagación del cáncer. La cirugía extirpa el tumor.
+* R "Al principio, pensé que era un esguince de muñeca por jugar al básquet. Pero el dolor no se iba, y luego empecé a sentirme cansado y sin energía. Ahora, tengo un bulto en la muñeca y me duele mucho. El médico dice que necesito hacerme más pruebas..."
+P11
+* E 42 años
+* S Femenino
+* O Secretaria
+* D Dermatitis atópica / Corticosteroides tópicos
+* D Psoriasis / Fototerapia
+* D Síndrome de Job / Antibióticos de amplio espectro
+* E Defecto en la función de los neutrófilos. Infecciones recurrentes de la piel y los pulmones, abscesos fríos, eccema.
+* F Combate las infecciones bacterianas recurrentes y previene las complicaciones.
+* R "Desde niña, he tenido problemas de piel. Siempre me salen eccemas que pican mucho, y a veces se infectan. He probado todo tipo de cremas y tratamientos, pero nada parece funcionar del todo. También he tenido varias neumonías, y los médicos no entienden por qué me enfermo tan seguido..."
+P12
+* E 68 años
+* S Masculino
+* O Jubilado
+* D Enfermedad de Parkinson / Levodopa
+* D Demencia senil / Memantina
+* D Granulomatosis con poliangeítis / Corticosteroides e inmunosupresores
+* E Vasculitis que afecta múltiples órganos. Fatiga, fiebre, pérdida de peso, dolor articular, erupciones cutáneas, problemas renales y pulmonares.
+* F Reduce la inflamación de los vasos sanguíneos y suprime la actividad del sistema inmunológico.
+* R "Últimamente, me siento muy cansado y sin fuerzas. He perdido peso sin razón aparente, y me duelen las articulaciones. También tengo tos y dificultad para respirar. El médico dice que puede ser la edad, pero yo no estoy tan seguro..."
+P13
+* E 25 años
+* S Femenino
+* O Bailarina
+* D Esguince de tobillo / Reposo y hielo
+* D Artritis reumatoide / Metotrexato
+* D Síndrome de Ehlers-Danlos / Fisioterapia y manejo del dolor
+* E Defecto en la síntesis de colágeno. Hiperlaxitud articular, piel elástica, fragilidad de los vasos sanguíneos, dolor crónico.
+* F Mejora la fuerza muscular, la estabilidad articular y reduce el dolor. Se evita la actividad física de alto impacto.
+* R "Siempre he sido muy flexible, puedo doblarme en todas direcciones. Pero también me disloco las articulaciones con facilidad, y tengo dolor crónico en las rodillas y los hombros. Mi piel es muy elástica y se estira mucho. Los médicos me dicen que soy 'hipermóvil', pero no sé si es algo normal..."
+P14
+* E 55 años
+* S Masculino
+* O Taxista
+* D Lumbalgia / Analgésicos
+* D Hernia discal / Fisioterapia
+* D Espondilitis anquilosante / Antiinflamatorios y fisioterapia
+* E Enfermedad inflamatoria crónica que afecta la columna vertebral y las articulaciones sacroilíacas. Dolor de espalda, rigidez, pérdida de movilidad.
+* F Reduce la inflamación, el dolor y la rigidez, mejora la movilidad y la función de la columna vertebral.
+* R "Llevo años con dolor de espalda, sobre todo por las mañanas. Me cuesta enderezarme, y siento como si tuviera la columna rígida. Los médicos me han dicho que es por la postura al manejar, pero el dolor es cada vez peor..."
+P15
+* E 32 años
+* S Femenino
+* O Periodista
+* D Gripe común / Antigripales
+* D Sinusitis / Antibióticos
+* D Telangiectasia hemorrágica hereditaria / Tratamiento de los episodios de sangrado
+* E Mutación en genes que afectan la formación de vasos sanguíneos. Malformaciones de los vasos sanguíneos, sangrado frecuente de la nariz y el tracto gastrointestinal.
+* F Control del sangrado con cauterización, embolización o cirugía.
+* R "Desde niña, he tenido hemorragias nasales frecuentes. A veces, también sangro por las encías o por el estómago. Los médicos me han hecho muchas pruebas, pero no encuentran la causa. Me preocupa que sea algo grave..."
+P16
+* E 10 años
+* S Masculino
+* O Estudiante
+* D Raquitismo / Suplementos de vitamina D
+* D Osteoporosis juvenil / Bifosfonatos
+* D Osteogénesis imperfecta / Bifosfonatos y cirugía
+* E Defecto en la síntesis de colágeno tipo I. Huesos frágiles, propensos a fracturas, deformidades esqueléticas.
+* F Aumenta la densidad ósea y reduce el riesgo de fracturas. La cirugía corrige las deformidades esqueléticas.
+* R "Siempre he tenido cuidado, pero me he roto los huesos varias veces, incluso con golpes leves. Mis huesos parecen de cristal. También soy más bajo que mis compañeros de clase, y tengo las piernas un poco arqueadas..."
+P17
+* E 48 años
+* S Femenino
+* O Ama de casa
+* D Diabetes mellitus / Insulina
+* D Insuficiencia renal / Diálisis
+* D Enfermedad de Pompe / Terapia de reemplazo enzimático
+* E Deficiencia de la enzima alfa-glucosidasa ácida. Acumulación de glucógeno en las células musculares, causando debilidad muscular progresiva, problemas respiratorios y cardíacos.
+* F Reemplaza la enzima faltante, mejorando la función muscular, respiratoria y cardíaca.
+* R "Últimamente, me cuesta subir escaleras y levantar objetos pesados. Siento como si mis músculos estuvieran cada vez más débiles. También me falta el aire al caminar, y tengo palpitaciones. El médico me ha hecho muchas pruebas, pero no encuentra la causa..."
+P18
+* E 62 años
+* S Masculino
+* O Jubilado
+* D Bronquitis crónica / Antibióticos
+* D Enfermedad pulmonar obstructiva crónica (EPOC) / Inhaladores
+* D Linfoma de Burkitt / Quimioterapia
+* E Cáncer agresivo del sistema linfático. Crecimiento rápido de ganglios linfáticos, fiebre, sudoración nocturna, pérdida de peso.
+* F Destruye las células cancerosas y reduce el tamaño del tumor.
+* R "Hace unos meses, noté un bulto en el cuello. Pensé que era un ganglio inflamado, pero no se ha ido. También he tenido fiebre, sudores nocturnos y he perdido peso. Estoy preocupado..."
+P19
+* E 27 años
+* S Femenino
+* O Escritora
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno obsesivo-compulsivo (TOC) / Antidepresivos
+* D Fenilcetonuria (PKU) / Dieta baja en fenilalanina
+* E Deficiencia de la enzima fenilalanina hidroxilasa. Acumulación de fenilalanina en el cuerpo, causando retraso mental, problemas de comportamiento, convulsiones.
+* F Restringe la ingesta de fenilalanina, previniendo la acumulación y los daños neurológicos.
+* R "De niña, era muy inquieta y me costaba concentrarme. Los profesores decían que era hiperactiva. Ahora, tengo problemas de ansiedad y me cuesta controlar mis emociones. Sigo una dieta especial baja en proteínas, pero no estoy segura de por qué..."
+P20
+* E 51 años
+* S Masculino
+* O Músico
+* D Síndrome del túnel carpiano / Férula de muñeca
+* D Artritis reumatoide / Metotrexato
+* D Fibrodisplasia osificante progresiva (FOP) / Manejo del dolor y prevención de lesiones
+* E Mutación en el gen ACVR1. Formación de hueso en músculos, tendones y ligamentos, causando dolor, rigidez y limitación del movimiento.
+* F Alivia el dolor y previene la formación de nuevo hueso. Se evita la actividad física de alto impacto y las inyecciones intramusculares.
+* R "Hace unos años, me salió un bulto duro en la espalda. Pensé que era un músculo contracturado, pero no se ha ido. Ahora, tengo varios bultos similares en los brazos y las piernas, y me cuesta moverme con libertad. El dolor es constante..."
+Paciente 21
+* E 16 años
+* S Femenino
+* O Estudiante
+* D Acné / Retinoides tópicos
+* D Rosácea / Antibióticos
+* D Síndrome de Treacher Collins / Cirugía reconstructiva
+* E Mutación en genes que afectan el desarrollo de los huesos y tejidos faciales. Anomalías craneofaciales, como pómulos pequeños o ausentes, mandíbula pequeña, orejas malformadas, paladar hendido.
+* F Corrige las anomalías craneofaciales y mejora la apariencia y la función.
+* R "Nací con una cara diferente. Mis pómulos son muy pequeños, mi mandíbula está retraída y mis orejas son malformadas. De niña, me hacían bullying por mi apariencia. Ahora, estoy considerando la cirugía para sentirme más segura de mí misma..."
+P22
+* E 44 años
+* S Masculino
+* O Gerente
+* D Depresión / Antidepresivos
+* D Trastorno bipolar / Estabilizadores del ánimo
+* D Tumor desmoplásico de células redondas pequeñas / Quimioterapia y cirugía
+* E Cáncer raro que afecta los tejidos blandos del abdomen. Dolor abdominal, masa abdominal, pérdida de peso, náuseas, vómitos.
+* F Destruye las células cancerosas y reduce el tamaño del tumor. La cirugía extirpa el tumor.
+* R "Últimamente, he tenido dolor de estómago y he perdido el apetito. También he notado un bulto en el abdomen. El médico me ha hecho pruebas, pero no está seguro de qué es. Estoy preocupado..."
+P23
+* E 29 años
+* S Femenino
+* O Veterinaria
+* D Asma / Inhaladores
+* D Enfermedad pulmonar obstructiva crónica (EPOC) / Inhaladores
+* D Inmunodeficiencia combinada grave (IDCG) / Trasplante de médula ósea
+* E Defecto en el desarrollo o la función de las células inmunitarias. Susceptibilidad a infecciones graves y recurrentes, retraso del crecimiento, diarrea crónica.
+* F Reemplaza el sistema inmunitario defectuoso con células madre sanas, restaurando la función inmunológica.
+* R "Desde pequeña, me enfermo con mucha frecuencia. He tenido neumonías, infecciones de oído, sinusitis y muchas otras enfermedades. Los médicos dicen que tengo un sistema inmunitario débil, pero no saben por qué..."
+P24
+* E 58 años
+* S Masculino
+* O Taxista
+* D Lumbalgia / Analgésicos
+* D Hernia discal / Fisioterapia
+* D Fiebre hemorrágica de Crimea-Congo / Cuidados de apoyo
+* E Virus transmitido por garrapatas. Fiebre, dolor de cabeza, dolor muscular, sangrado (piel, encías, nariz, vómitos, heces).
+* F Manejo de síntomas (antipiréticos, analgésicos), reemplazo de líquidos y electrolitos, control del sangrado.
+* R "Hace unos días, me picó una garrapata en el campo. Ahora tengo fiebre, dolor de cabeza y me siento muy débil. También he notado algunos moretones en la piel, y he sangrado por la nariz. Espero que no sea nada grave..."
+P25
+* E 36 años
+* S Femenino
+* O Diseñadora
+* D Síndrome del intestino irritable / Dieta baja en FODMAP
+* D Enfermedad de Crohn / Corticosteroides
+* D Fiebre de Lassa / Ribavirina
+* E Virus transmitido por roedores. Fiebre, dolor de cabeza, dolor muscular, debilidad, dolor de garganta, tos, náuseas, vómitos, diarrea, dolor abdominal, sangrado (encías, nariz, ojos, vagina).
+* F Antiviral que puede reducir la gravedad y la duración de la enfermedad.
+* R "Viajé a África hace unas semanas, y ahora me siento muy mal. Tengo fiebre, dolor de cabeza, dolor muscular y estoy muy cansada. También he tenido náuseas, vómitos y diarrea. Espero que no sea nada contagioso..."Paciente 26
+* E 8 años
+* S Masculino
+* O Estudiante
+* D Retraso del desarrollo / Terapia ocupacional
+* D Autismo / Terapia del habla
+* D Holoprosencefalia / Cuidados de apoyo
+* E Malformación cerebral en la que el cerebro anterior no se divide en dos hemisferios. Retraso del desarrollo, discapacidad intelectual, convulsiones, problemas de visión y alimentación, rasgos faciales distintivos.
+* F Manejo de síntomas (anticonvulsivos, terapia ocupacional, fisioterapia, terapia del habla), apoyo nutricional y respiratorio.
+* R "Nací con la cabeza un poco diferente, y mis ojos están muy juntos. También tengo problemas para aprender cosas nuevas, y a veces me dan convulsiones. Mamá dice que soy especial, pero a veces me siento triste porque no puedo hacer las mismas cosas que los demás niños..."
+P26
+* E 52 años
+* S Femenino
+* O Ama de casa
+* D Artritis reumatoide / Metotrexato
+* D Lupus eritematoso sistémico / Corticosteroides
+* D Síndrome de Edwards / Cuidados de apoyo
+* E Trisomía del cromosoma 18. Malformaciones congénitas graves, retraso del crecimiento, discapacidad intelectual, problemas cardíacos, renales y gastrointestinales.
+* F Manejo de síntomas (anticonvulsivos, terapia ocupacional, fisioterapia, terapia del habla), apoyo nutricional y respiratorio, corrección quirúrgica de malformaciones.
+* R "Mi hija nació con muchos problemas de salud. Tiene el corazón débil, problemas para respirar y no puede caminar ni hablar. Los médicos dicen que tiene un problema genético raro, y que no hay cura. Es muy difícil verla sufrir..."
+P27
+* E 34 años
+* S Masculino
+* O Ingeniero
+* D Asma / Inhaladores
+* D Bronquitis crónica / Antibióticos
+* D Síndrome respiratorio de Oriente Medio (MERS) / Cuidados de apoyo
+* E Infección viral respiratoria. Fiebre, tos, dificultad para respirar, neumonía, insuficiencia renal.
+* F Manejo de síntomas (antipiréticos, analgésicos, oxígeno suplementario), prevención de complicaciones (infecciones secundarias), aislamiento del paciente.
+* R "Viajé a Oriente Medio por trabajo hace unas semanas. Ahora tengo fiebre, tos y me cuesta respirar. Me siento muy débil y cansado. Espero que no sea nada contagioso..."
+P28
+* E 21 años
+* S Femenino
+* O Estudiante
+* D Anorexia nerviosa / Psicoterapia
+* D Bulimia nerviosa / Psicoterapia
+* D Síndrome de insensibilidad a los andrógenos / Cirugía de reconstrucción genital y terapia hormonal
+* E Incapacidad del cuerpo para responder a las hormonas masculinas. Apariencia femenina en individuos con cromosomas XY, ausencia de menstruación, desarrollo de mamas en la pubertad.
+* F La cirugía crea genitales femeninos y la terapia hormonal femenina induce el desarrollo de características sexuales secundarias femeninas.
+* R "Aunque nací con genitales masculinos, siempre me he sentido mujer. Nunca me ha gustado mi cuerpo, y me siento incómoda con mi identidad. He ido al psicólogo, pero no me siento mejor. Estoy considerando la cirugía de reasignación de sexo..."
+P29
+* E 48 años
+* S Masculino
+* O Taxista
+* D Resfriado común / Antigripales
+* D Gripe / Antigripales
+* D Enfermedad pulmonar intersticial (EPI) / Corticosteroides y oxígeno suplementario
+* E Grupo de enfermedades que causan cicatrización del tejido pulmonar. Dificultad para respirar, tos seca, fatiga.
+* F Reduce la inflamación y la fibrosis pulmonar, mejora la función pulmonar y la calidad de vida.
+* R "Últimamente, me falta el aire al caminar o subir escaleras. También tengo una tos seca que no se me quita. El médico dice que puede ser asma o bronquitis, pero los inhaladores no me hacen mucho efecto..."
+* Paciente 31
+* E 62 años
+* S Femenino
+* O Jubilada
+* D Cataratas / Cirugía
+* D Degeneración macular / Inyecciones intravítreas
+* D Síndrome de Miller Fisher / Inmunoglobulina intravenosa
+* E Variante del síndrome de Guillain-Barré. Debilidad muscular, parálisis de los músculos oculares, pérdida de coordinación, dificultad para hablar y tragar.
+* F Modula la respuesta inmune y reduce la inflamación de los nervios, mejorando la debilidad muscular y la coordinación.
+* R "Hace unas semanas, empecé a ver doble y a tener problemas para enfocar. También me cuesta hablar y tragar, y siento debilidad en las piernas. El médico dice que puede ser un problema en los nervios, pero no está seguro..."
+P32
+* E 27 años
+* S Masculino
+* O Músico
+* D Tinnitus / Terapia de sonido
+* D Pérdida de audición / Audífonos
+* D Neumotórax espontáneo / Drenaje pleural o toracostomía
+* E Acumulación de aire en el espacio pleural, causando colapso pulmonar. Dolor torácico, dificultad para respirar.
+* F Elimina el aire del espacio pleural, permitiendo que el pulmón se expanda nuevamente.
+* R "De repente, empecé a sentir un dolor muy fuerte en el pecho, como si me clavaran un cuchillo. También me cuesta respirar profundamente. No sé qué me ha pasado, pero me asusta mucho..."
+P33
+* E 51 años
+* S Femenino
+* O Maestra
+* D Ansiedad / Ansiolíticos
+* D Depresión / Antidepresivos
+* D Acalasia / Miotomía de Heller o dilatación neumática
+* E Trastorno de la motilidad esofágica. Dificultad para tragar, regurgitación, dolor torácico, pérdida de peso.
+* F Relaja el esfínter esofágico inferior, permitiendo que los alimentos pasen al estómago.
+* R "Llevo tiempo con problemas para tragar. Siento como si la comida se me quedara atascada en la garganta. También tengo ardor de estómago y regurgitación. He perdido peso sin querer, y me siento cansada..."
+P34
+* E 16 años
+* S Femenino
+* O Estudiante
+* D Escoliosis / Fisioterapia
+* D Enfermedad de Scheuermann / Corsé ortopédico
+* D Púrpura trombocitopénica idiopática (PTI) / Corticosteroides o esplenectomía
+* E Trastorno autoinmune que causa la destrucción de plaquetas. Moretones fáciles, sangrado (nasal, encías), petequias.
+* F Aumenta el recuento de plaquetas, reduce el riesgo de sangrado. La esplenectomía elimina la principal fuente de destrucción de plaquetas.
+* R "Últimamente, me salen moretones con facilidad, incluso con pequeños golpes. También me sangra la nariz a menudo, y tengo pequeñas manchas rojas en la piel. Mis padres están preocupados, y yo también..."
+P35
+* E 44 años
+* S Masculino
+* O Gerente
+* D Gastritis / Antiácidos
+* D Úlcera péptica / Inhibidores de la bomba de protones
+* D Pénfigo vulgar / Corticosteroides e inmunosupresores
+* E Enfermedad autoinmune que causa ampollas en la piel y las membranas mucosas. Ampollas dolorosas que se rompen fácilmente, erosiones, costras.
+* F Reduce la inflamación y suprime la actividad del sistema inmunológico, previniendo la formación de nuevas ampollas.
+* R "Me han salido unas ampollas muy dolorosas en la boca y en la piel. Se rompen con facilidad y dejan llagas que tardan en curarse. No sé qué me pasa, pero me preocupa que sea algo contagioso..."
+
+
+Paciente 36
+* E 29 años
+* S Femenino
+* O Veterinaria
+* D Alergia / Antihistamínicos
+* D Dermatitis de contacto / Corticosteroides tópicos
+* D Ictiosis / Cremas hidratantes y queratolíticos
+* E Grupo de trastornos que causan piel seca y escamosa. Picazón, descamación, engrosamiento de la piel.
+* F Hidrata la piel y elimina las escamas, mejorando la apariencia y reduciendo la picazón.
+* R "Mi piel siempre ha sido muy seca y escamosa, como la de un pez. Me pica mucho, y a veces se me forman grietas que sangran. He probado muchas cremas y lociones, pero nada parece funcionar del todo..."
+P37
+* E 58 años
+* S Masculino
+* O Taxista
+* D Neuropatía periférica / Gabapentina
+* D Esclerosis múltiple / Interferón beta
+* D Ataxia de Friedreich / Fisioterapia y ayudas para la movilidad
+* E Degeneración de las células nerviosas en la médula espinal y el cerebelo. Problemas de coordinación, equilibrio, marcha, debilidad muscular, problemas del habla.
+* F Mejora la fuerza muscular, la coordinación y el equilibrio. Las ayudas para la movilidad (bastones, andadores, sillas de ruedas) proporcionan estabilidad y independencia.
+* R "Últimamente, me tropiezo con frecuencia y me cuesta mantener el equilibrio. También siento debilidad en las piernas y me tiemblan las manos. El médico dice que puede ser un problema en los nervios, pero no está seguro..."
+P38
+* E 36 años
+* S Femenino
+* O Diseñadora
+* D Síndrome del intestino irritable / Dieta baja en FODMAP
+* D Enfermedad de Crohn / Corticosteroides
+* D Enfermedad de Crohn / Antiinflamatorios, inmunosupresores, cirugía
+* E Enfermedad inflamatoria intestinal crónica. Diarrea, dolor abdominal, sangrado rectal, pérdida de peso, fatiga.
+* F Reduce la inflamación, suprime la actividad del sistema inmunológico y alivia los síntomas. La cirugía se realiza para tratar complicaciones como obstrucciones, fístulas o abscesos.
+* R "Llevo tiempo con problemas digestivos. Tengo diarrea frecuente, dolor abdominal y a veces sangrado rectal. He perdido peso sin querer, y me siento cansada todo el tiempo. El médico dice que puede ser una enfermedad inflamatoria intestinal, pero no está seguro..."
+P39
+* E 8 años
+* S Masculino
+* O Estudiante
+* D Retraso del desarrollo / Terapia ocupacional
+* D Autismo / Terapia del habla
+* D Meningitis aséptica / Cuidados de apoyo
+* E Inflamación de las meninges (membranas que recubren el cerebro y la médula espinal) sin infección bacteriana. Fiebre, dolor de cabeza, rigidez de nuca, náuseas, vómitos.
+* F Alivia los síntomas (antipiréticos, analgésicos), reposo, hidratación.
+* R "Me duele mucho la cabeza, y tengo fiebre y vómitos. No puedo mover el cuello, y la luz me molesta mucho. Mamá dice que puede ser una meningitis, pero no sabe qué tipo..."
+P40
+* E 52 años
+* S Femenino
+* O Ama de casa
+* D Hipertensión arterial / Antihipertensivos
+* D Insuficiencia cardíaca / Diuréticos
+* D Síndrome de taquicardia postural ortostática (POTS) / Aumento de la ingesta de líquidos y sal, medias de compresión, medicamentos
+* E Disautonomía que afecta el sistema nervioso autónomo. Aumento de la frecuencia cardíaca al ponerse de pie, mareos, aturdimiento, fatiga, dolor de cabeza, náuseas.
+* F Aumenta el volumen sanguíneo y la presión arterial, mejora el retorno venoso y reduce los síntomas.
+* R "Cada vez que me levanto de la cama o de una silla, me siento mareada y me dan palpitaciones. También me duele la cabeza y me siento cansada. El médico me ha hecho pruebas del corazón, pero no encuentra nada anormal..."
+Paciente 41
+* E 34 años
+* S Masculino
+* O Ingeniero
+* D Miopía / Anteojos
+* D Astigmatismo / Lentes de contacto
+* D Queratocono / Lentes de contacto rígidos o trasplante de córnea
+* E Adelgazamiento progresivo y deformación de la córnea. Visión borrosa, distorsionada, sensibilidad a la luz.
+* F Corrigen la forma irregular de la córnea, mejorando la visión. El trasplante de córnea reemplaza la córnea dañada.
+* R "Mi visión ha empeorado en los últimos años. Veo borroso y distorsionado, sobre todo por la noche. Los anteojos y las lentillas no me ayudan mucho. El médico dice que tengo un problema en la córnea, pero no está seguro de qué es..."
+P42
+* E 21 años
+* S Femenino
+* O Estudiante
+* D Diabetes mellitus / Insulina
+* D Infección urinaria / Antibióticos
+* D Diabetes insípida / Desmopresina
+* E Deficiencia de la hormona antidiurética (ADH) o resistencia a la ADH. Exceso de orina diluida, sed excesiva, deshidratación.
+* F Reemplaza la ADH faltante o aumenta la sensibilidad a la ADH, reduciendo la producción de orina y la sed.
+* R "Tengo mucha sed todo el tiempo, y voy al baño con mucha frecuencia. Bebo mucha agua, pero sigo teniendo sed. El médico me ha hecho pruebas de diabetes, pero no la tengo..."
+P43
+* E 48 años
+* S Masculino
+* O Taxista
+* D Resfriado común / Antigripales
+* D Gripe / Antigripales
+* D Desprendimiento de vítreo posterior / Observación o vitrectomía
+* E Separación del vítreo (gel transparente) de la retina. Moscas volantes, destellos de luz, pérdida de visión si se afecta la mácula.
+* F Se observa si el desprendimiento es pequeño y no afecta la visión. La vitrectomía elimina el vítreo y repara la retina.
+* R "Últimamente, veo como pequeñas manchas negras flotando en mi visión, y a veces veo destellos de luz. El médico me ha dicho que puede ser un desprendimiento de vítreo, pero no sé qué significa eso..."
+P44
+* E 62 años
+* S Femenino
+* O Jubilada
+* D Demencia senil / Memantina
+* D Enfermedad de Alzheimer / Donepezilo
+* D Demencia frontotemporal / Manejo de síntomas y apoyo
+* E Degeneración de los lóbulos frontal y temporal del cerebro. Cambios de personalidad, comportamiento y lenguaje, problemas de memoria.
+* F Manejo de síntomas (antipsicóticos, antidepresivos), terapia del habla, terapia ocupacional, apoyo a la familia.
+* R "Mi personalidad ha cambiado mucho en los últimos años. Me he vuelto más impulsiva, desinhibida y a veces agresiva. También tengo problemas para encontrar las palabras, y me cuesta seguir una conversación. Mi familia está muy preocupada..."
+P45
+* E 27 años
+* S Masculino
+* O Músico
+* D Insomnio / Pastillas para dormir
+* D Apnea del sueño / Terapia CPAP
+* D Narcolepsia / Modafinilo y antidepresivos
+* E Trastorno del sueño que causa somnolencia diurna excesiva, cataplejía (pérdida repentina del tono muscular), parálisis del sueño, alucinaciones hipnagógicas.
+* F Promueve la vigilia, reduce la somnolencia diurna y la cataplejía.
+* R "Me quedo dormido en cualquier momento y lugar, incluso en medio de una conversación o mientras estoy comiendo. También tengo episodios de debilidad muscular repentina cuando me río o me emociono. Es muy incómodo..."
+Paciente 46
+* E 51 años
+* S Femenino
+* O Maestra
+* D Artrosis / Analgésicos
+* D Fibromialgia / Antidepresivos
+* D Osteoporosis / Bifosfonatos y suplementos de calcio y vitamina D
+* E Disminución de la densidad ósea, aumentando el riesgo de fracturas. Dolor de espalda, pérdida de estatura, postura encorvada.
+* F Aumenta la densidad ósea y reduce el riesgo de fracturas.
+* R "Últimamente, me duele mucho la espalda, sobre todo por las mañanas. También he notado que me he encogido un poco, y me cuesta mantenerme derecha. El médico dice que puede ser osteoporosis, pero no estoy segura..."
+P47
+* E 16 años
+* S Femenino
+* O Estudiante
+* D Estrabismo / Anteojos
+* D Esclerosis múltiple / Interferón beta
+* D Miastenia gravis / Piridostigmina o timectomía
+* E Trastorno neuromuscular autoinmune. Debilidad muscular fluctuante, especialmente en los músculos oculares, faciales y respiratorios.
+* F Mejora la transmisión neuromuscular, aumentando la fuerza muscular. La timectomía elimina el timo, que produce anticuerpos que atacan los receptores de acetilcolina.
+* R "A veces, veo doble y me cuesta mantener los ojos abiertos. También siento debilidad en los brazos y las piernas, sobre todo al final del día. El médico dice que puede ser un problema en los músculos, pero no está seguro..."
+P48
+* E 44 años
+* S Masculino
+* O Gerente
+* D Gastritis / Antiácidos
+* D Intolerancia a la lactosa / Dieta sin lactosa
+* D Enfermedad celíaca / Dieta sin gluten
+* E Enfermedad autoinmune desencadenada por el gluten. Daño al intestino delgado, malabsorción de nutrientes, diarrea, distensión abdominal, pérdida de peso, fatiga.
+* F Elimina el gluten de la dieta, permitiendo que el intestino delgado se cure y mejorando los síntomas.
+* R "Llevo tiempo con problemas digestivos. Tengo diarrea, dolor abdominal e hinchazón después de comer. También he perdido peso sin querer, y me siento cansado todo el tiempo. El médico me ha hecho pruebas de alergias, pero no encuentra nada..."
+P49
+* E 29 años
+* S Femenino
+* O Veterinaria
+* D Dermatitis atópica / Corticosteroides tópicos
+* D Eccema / Cremas hidratantes
+* D Psoriasis / Corticosteroides tópicos, fototerapia, medicamentos sistémicos
+* E Enfermedad autoinmune que causa la acumulación de células de la piel. Placas rojas y escamosas en la piel, picazón, dolor articular.
+* F Reduce la inflamación y la producción de células de la piel, mejorando la apariencia de la piel y reduciendo la picazón y el dolor.
+* R "Tengo unas placas rojas y escamosas en la piel que pican mucho. Me salen en los codos, las rodillas y el cuero cabelludo. He probado muchas cremas y champús, pero nada parece funcionar del todo..."
+P50
+* E 58 años
+* S Masculino
+* O Taxista
+* D Accidente cerebrovascular / Fisioterapia
+* D Enfermedad de Parkinson / Levodopa
+* D Esclerosis lateral amiotrófica (ELA) / Riluzol y cuidados paliativos
+* E Degeneración de las neuronas motoras. Debilidad muscular progresiva, parálisis, dificultad para hablar, tragar y respirar.
+* F Retrasa la progresión de la enfermedad y prolonga la supervivencia. Los cuidados paliativos manejan los síntomas y mejoran la calidad de vida.
+* R "Últimamente, siento debilidad en las manos y los brazos. Me cuesta abotonarme la camisa y escribir. También me tiembla la voz, y me cuesta tragar. El médico dice que puede ser un problema en los nervios, pero no está seguro..."
+Paciente 51
+* E 32 años
+* S Femenino
+* O Maestra
+* D Gripe / Antigripales
+* D Depresión / Antidepresivos
+* D Enfermedad de Lyme / Antibióticos
+* E Infección bacteriana transmitida por garrapatas. Fiebre, fatiga, dolor de cabeza, erupción cutánea, dolor articular.
+* F Los antibióticos eliminan la bacteria causante de la enfermedad.
+* R "Me siento agotada, con dolor de cabeza y muscular. También tengo fiebre y una erupción en la piel. Fui al médico, pero me dijo que era gripe. Los síntomas no mejoran, y ahora también me duelen las articulaciones..."
+P52
+* E 24 años
+* S Masculino
+* O Estudiante
+* D Artritis reumatoide / Antiinflamatorios
+* D Fibromialgia / Analgésicos
+* D Lupus eritematoso sistémico (LES) / Corticosteroides e inmunosupresores
+* E Enfermedad autoinmune. Fatiga, dolor articular, erupciones cutáneas, fiebre, problemas renales, anemia.
+* F Reduce la inflamación y suprime la actividad del sistema inmunológico.
+* R "Tengo dolor en las articulaciones, sobre todo en las manos y las rodillas. También me siento cansado todo el tiempo, y me han salido unas manchas rojas en la cara. El médico me ha hecho muchas pruebas, pero no encuentra la causa..."
+P53
+* E 48 años
+* S Femenino
+* O Contadora
+* D Síndrome del túnel carpiano / Férula de muñeca
+* D Esclerosis lateral amiotrófica (ELA) / Riluzol
+* D Esclerosis múltiple (EM) / Medicamentos modificadores de la enfermedad
+* E Enfermedad neurológica que afecta el sistema nervioso central. Fatiga, debilidad muscular, problemas de visión, entumecimiento, hormigueo, problemas de equilibrio y coordinación.
+* F Reduce la frecuencia e intensidad de los brotes, retrasa la progresión de la enfermedad.
+* R "Últimamente, siento debilidad y entumecimiento en las piernas. También tengo problemas de visión y me cuesta mantener el equilibrio. El médico me ha hecho una resonancia magnética, pero no está seguro de lo que tengo..."
+P54
+* E 32 años
+* S Masculino
+* O Programador
+* D Depresión / Antidepresivos
+* D Síndrome de fatiga crónica / Terapia cognitivo-conductual
+* D Fibromialgia / Analgésicos, antidepresivos, terapia cognitivo-conductual
+* E Síndrome de dolor crónico generalizado. Dolor muscular, fatiga, problemas de sueño, problemas cognitivos.
+* F Alivia el dolor, mejora el sueño y el estado de ánimo, reduce la fatiga.
+* R "Me duele todo el cuerpo, sobre todo los músculos. También estoy muy cansado, y me cuesta concentrarme. El médico me ha hecho muchas pruebas, pero no encuentra nada. Dice que puede ser estrés o depresión, pero yo no lo creo..."
+P55
+* E 28 años
+* S Femenino
+* O Enfermera
+* D Anemia / Suplementos de hierro
+* D Hipotiroidismo / Levotiroxina
+* D Síndrome de fatiga crónica / Manejo de síntomas y terapia
+* E Fatiga persistente e inexplicable. Dolor muscular, problemas de sueño, problemas cognitivos.
+* F Mejora la calidad de vida, reduce la fatiga y otros síntomas.
+* R "Estoy agotada todo el tiempo, incluso después de dormir mucho. Me cuesta concentrarme, y tengo dolores musculares. El médico me ha hecho pruebas de sangre, pero no encuentra nada. Dice que puede ser estrés o depresión, pero yo sé que es algo más..."
+Paciente 56
+* E 65 años
+* S Masculino
+* O Jubilado (ex-fumador)
+* D Bronquitis crónica / Antibióticos
+* D Asma / Inhaladores
+* D Cáncer de pulmón / Cirugía, quimioterapia, radioterapia
+* E Tumor maligno en el pulmón. Tos persistente, dificultad para respirar, dolor en el pecho, pérdida de peso.
+* F La cirugía extirpa el tumor, la quimioterapia y la radioterapia destruyen las células cancerosas.
+* R "Llevo semanas con una tos seca que no se me quita. Seguro que es por haber fumado tantos años. El médico me ha dado antibióticos, pero no mejoro. A veces también me cuesta respirar, pero pienso que es por la edad..."
+P57
+* E 52 años
+* S Femenino
+* O Ama de casa
+* D Síndrome del intestino irritable / Dieta baja en FODMAP
+* D Hemorroides / Cremas tópicas
+* D Cáncer de colon / Cirugía, quimioterapia
+* E Tumor maligno en el colon. Cambios en los hábitos intestinales, sangrado rectal, dolor abdominal, pérdida de peso.
+* F La cirugía extirpa el tumor, la quimioterapia destruye las células cancerosas.
+* R "Últimamente, voy al baño con más frecuencia, y a veces tengo estreñimiento. También he notado un poco de sangre en las heces, pero creo que son hemorroides. Ya se me pasará..."
+P58
+* E 68 años
+* S Masculino
+* O Jubilado
+* D Gastritis / Antiácidos
+* D Úlcera péptica / Inhibidores de la bomba de protones
+* D Cáncer de páncreas / Cirugía, quimioterapia, radioterapia
+* E Tumor maligno en el páncreas. Dolor abdominal, pérdida de peso, ictericia, náuseas, vómitos.
+* F La cirugía extirpa el tumor, la quimioterapia y la radioterapia destruyen las células cancerosas.
+* R "Tengo molestias en el estómago de vez en cuando, sobre todo después de comer. El médico me ha dado antiácidos, pero no mejoro del todo. También he perdido peso sin querer, pero creo que es por la edad..."
+P59
+* E 45 años
+* S Femenino
+* O Secretaria
+* D Síndrome premenstrual / Analgésicos
+* D Quistes ováricos / Anticonceptivos
+* D Cáncer de ovario / Cirugía, quimioterapia
+* E Tumor maligno en el ovario. Hinchazón abdominal, dolor pélvico, cambios en los hábitos intestinales, pérdida de peso.
+* F La cirugía extirpa el tumor, la quimioterapia destruye las células cancerosas.
+* R "Me siento un poco hinchada y tengo molestias en el vientre, pero creo que es por la regla. También estoy un poco estreñida, pero seguro que es por el estrés del trabajo..."
+P60
+* E 22 años
+* S Masculino
+* O Estudiante
+* D Mononucleosis / Reposo
+* D Anemia / Suplementos de hierro
+* D Leucemia / Quimioterapia, trasplante de médula ósea
+* E Cáncer de la sangre. Fatiga, debilidad, fiebre, pérdida de peso, infecciones frecuentes, hematomas, sangrado.
+* F La quimioterapia destruye las células cancerosas, el trasplante de médula ósea reemplaza las células sanguíneas enfermas.
+* R "Me siento cansado todo el tiempo, y me cuesta concentrarme en los estudios. También me salen moretones con facilidad, y tengo la piel pálida. El médico me ha hecho análisis de sangre, pero no encuentra nada claro..."
+P61
+* E 58 años
+* S Femenino
+* O Jubilada
+* D Infección viral / Reposo
+* D Estrés / Relajación
+* D Linfoma / Quimioterapia, radioterapia
+* E Cáncer del sistema linfático. Inflamación de los ganglios linfáticos, fiebre, sudoración nocturna, pérdida de peso, fatiga.
+* F La quimioterapia y la radioterapia destruyen las células cancerosas.
+* R "Tengo un ganglio inflamado en el cuello desde hace unas semanas, pero no me duele. También me siento cansada y he perdido peso sin querer. El médico me ha dicho que es estrés, pero no estoy convencida..."
+P62
+* E 62 años
+* S Masculino
+* O Jubilado
+* D Temblor esencial / Betabloqueantes
+* D Estrés / Relajación
+* D Enfermedad de Parkinson / Levodopa, agonistas dopaminérgicos, cirugía
+* E Enfermedad neurodegenerativa que afecta el movimiento. Temblores, rigidez muscular, lentitud de movimientos, problemas de equilibrio.
+* F Aumenta los niveles de dopamina en el cerebro, mejorando los síntomas motores.
+* R "Me tiembla un poco la mano derecha, sobre todo cuando estoy nervioso. También me cuesta abrocharme los botones y escribir. El médico me ha dicho que es normal a mi edad, pero me preocupa que sea algo más..."
+P63
+* E 55 años
+* S Masculino
+* O Constructor
+* D Síndrome del túnel carpiano / Férula de muñeca
+* D Artritis / Antiinflamatorios
+* D Esclerosis lateral amiotrófica (ELA) / Riluzol y cuidados paliativos
+* E Degeneración de las neuronas motoras. Debilidad muscular progresiva, parálisis, dificultad para hablar, tragar y respirar.
+* F Retrasa la progresión de la enfermedad y prolonga la supervivencia. Los cuidados paliativos manejan los síntomas y mejoran la calidad de vida.
+* R "Últimamente, siento debilidad en las manos y los brazos. Me cuesta sujetar las herramientas y levantar objetos pesados. El médico me ha hecho pruebas, pero no encuentra la causa. Dice que puede ser un problema en los nervios o en los músculos..."
+P64
+* E 68 años
+* S Femenino
+* O Jubilada
+* D Fatiga / Vitaminas
+* D Sobrepeso / Dieta
+* D Insuficiencia cardíaca / Medicamentos, cambios en el estilo de vida, cirugía
+* E El corazón no bombea sangre de manera eficiente. Fatiga, dificultad para respirar, hinchazón de piernas y tobillos, tos.
+* F Mejora la función del corazón, reduce los síntomas y previene complicaciones.
+* R "Me siento cansada todo el tiempo, y me cuesta respirar al subir escaleras. También tengo las piernas hinchadas al final del día. El médico dice que puede ser por la edad o por el sobrepeso, pero no estoy segura..."
+P65
+* E 52 años
+* S Masculino
+* O Abogado
+* D Infección urinaria / Antibióticos
+* D Hiperplasia prostática benigna / Medicamentos
+* D Enfermedad renal crónica / Medicamentos, dieta, diálisis, trasplante de riñón
+* E Pérdida progresiva de la función renal. Fatiga, pérdida de apetito, náuseas, vómitos, picazón, hinchazón, cambios en la micción.
+* F Ralentiza la progresión de la enfermedad, controla los síntomas y previene complicaciones.
+* R "Voy al baño con más frecuencia por la noche, y me cuesta dormir. También me siento cansado y sin apetito. El médico me ha hecho análisis de sangre y orina, pero no está 
+* seguro de lo que tengo..."
+* P66
+* E 35 años
+* S Femenino
+* O Profesora
+* D Cólicos menstruales / Analgésicos
+* D Síndrome del intestino irritable / Dieta baja en FODMAP
+* D Endometriosis / Medicamentos, cirugía
+* E Tejido similar al endometrio crece fuera del útero. Dolor pélvico, períodos menstruales dolorosos, infertilidad.
+* F Los medicamentos alivian el dolor y reducen el crecimiento del tejido endometrial. La cirugía extirpa el tejido endometrial.
+* R "Tengo dolores menstruales muy fuertes, que me impiden hacer vida normal. También siento dolor durante las relaciones sexuales y al ir al baño. El médico me ha dicho que es normal, pero no estoy convencida..."
+P67
+* E 28 años
+* S Masculino
+* O Ingeniero
+* D Intolerancia a la lactosa / Dieta sin lactosa
+* D Síndrome del intestino irritable / Dieta baja en FODMAP
+* D Enfermedad celíaca / Dieta sin gluten
+* E Enfermedad autoinmune desencadenada por el gluten. Daño al intestino delgado, malabsorción de nutrientes, diarrea, distensión abdominal, pérdida de peso, fatiga.
+* F Elimina el gluten de la dieta, permitiendo que el intestino delgado se cure y mejorando los síntomas.
+* R "Siempre que como pan, pasta o pizza, me siento mal del estómago. Tengo diarrea, gases e hinchazón. El médico me ha dicho que puede ser intolerancia a la lactosa, pero la dieta sin lactosa no me ayuda mucho..."
+P68
+* E 42 años
+* S Femenino
+* O Secretaria
+* D Gastritis / Antiácidos
+* D Estrés / Relajación
+* D Síndrome del intestino irritable (SII) / Dieta, manejo del estrés, medicamentos
+* E Trastorno funcional del intestino. Dolor abdominal, distensión, diarrea o estreñimiento, gases.
+* F Mejora los síntomas y la calidad de vida.
+* R "Tengo dolor de estómago con frecuencia, y a veces tengo diarrea o estreñimiento. También me siento hinchada y con gases. El médico me ha dicho que es estrés, pero no estoy segura..."
+P69
+* E 55 años
+* S Masculino
+* O Taxista
+* D Alergia / Antihistamínicos
+* D Dermatitis / Corticosteroides tópicos
+* D Mastocitosis sistémica / Antihistamínicos, corticosteroides, otros medicamentos
+* E Trastorno raro con acumulación de mastocitos en diferentes tejidos. Picazón, enrojecimiento de la piel, problemas digestivos, anafilaxia.
+* F Reduce la cantidad de mastocitos y controla los síntomas.
+* R "Me pica la piel con frecuencia, y me salen ronchas rojas. También tengo diarrea y dolor abdominal. A veces, me siento mareado y con dificultad para respirar. El médico no sabe qué me pasa..."
+P70
+* E 68 años
+* S Femenino
+* O Jubilada
+* D Sequedad ocular / Lágrimas artificiales
+* D Sequedad bucal / Saliva artificial
+* D Síndrome de Sjögren / Lágrimas artificiales, saliva artificial, medicamentos
+* E Enfermedad autoinmune que afecta las glándulas exocrinas. Sequedad en ojos y boca, fatiga, dolor articular.
+* F Alivia los síntomas de sequedad y controla la inflamación.
+* R "Tengo los ojos y la boca muy secos, y me cuesta tragar. También me siento cansada y me duelen las articulaciones. El médico me ha dicho que es por la edad, pero no estoy segura..."
+Paciente 71
+* E 25 años
+* S Masculino
+* O Artista
+* D Esquizofrenia / Antipsicóticos
+* D Trastorno bipolar / Estabilizadores del estado de ánimo
+* D Síndrome de Cotard (delirio de negación) / Terapia y antidepresivos
+* E Trastorno delirante en el que la persona cree estar muerta, no existir o que le faltan órganos internos.
+* F La terapia ayuda a comprender y modificar las creencias delirantes, los antidepresivos pueden abordar la depresión subyacente.
+* R "Siento que no existo, que soy un fantasma. A veces creo que estoy muerto y que camino entre los vivos. Sé que suena extraño, pero es lo que siento..."
+P72
+* E 48 años
+* S Femenino
+* O Ama de casa
+* D Trastorno obsesivo-compulsivo (TOC) / Terapia de exposición y prevención de respuesta
+* D Trastorno dismórfico corporal / Psicoterapia
+* D Síndrome de Ekbom (delirio de parasitosis) / Antipsicóticos y terapia
+* E Delirio de infestación por parásitos, insectos u otros organismos. Picazón, sensación de movimiento bajo la piel.
+* F Los antipsicóticos reducen la intensidad de las creencias delirantes, la terapia ayuda a desarrollar mecanismos de afrontamiento.
+* R "Siento bichos caminando debajo de mi piel. Me pican y se mueven todo el tiempo. He ido al médico, pero no encuentra nada. Estoy segura de que algo me está infestando..."
+P73
+* E 32 años
+* S Masculino
+* O Programador
+* D Depresión / Antidepresivos
+* D Trastorno de ansiedad social / Terapia cognitivo-conductual
+* D Síndrome de Frégoli (delirio de identificación errónea) / Antipsicóticos y terapia
+* E Delirio en el que la persona cree que diferentes personas son en realidad una sola persona que cambia de apariencia.
+* F Los antipsicóticos reducen la intensidad de las creencias delirantes, la terapia ayuda a cuestionar y modificar las percepciones erróneas.
+* R "Veo a la misma persona por todas partes, aunque sé que son personas diferentes. Estoy seguro de que me está persiguiendo y que está disfrazado para que no lo reconozca..."
+P74
+* E 55 años
+* S Femenino
+* O Jubilada
+* D Trastorno de acumulación / Terapia cognitivo-conductual
+* D Demencia / Inhibidores de la colinesterasa
+* D Síndrome de Diógenes / Intervención social y apoyo psiquiátrico
+* E Descuido extremo del autocuidado, aislamiento social, acumulación compulsiva de objetos.
+* F La intervención social ayuda a mejorar las condiciones de vida, el apoyo psiquiátrico aborda los problemas de salud mental subyacentes.
+* R "No necesito tirar nada, todo me puede servir algún día. Mi casa está llena de cosas, pero no me molestan. Prefiero estar sola, la gente no me entiende..."
+P75
+* E 28 años
+* S Masculino
+* O Músico
+* D Trastorno de pánico / Benzodiazepinas
+* D Hipocondría / Psicoterapia
+* D Síndrome de Koro / Psicoterapia y manejo de la ansiedad
+* E Episodios de pánico intenso relacionados con la creencia de que los genitales se están retrayendo o desapareciendo.
+* F La psicoterapia ayuda a comprender y modificar las creencias irracionales, el manejo de la ansiedad reduce los síntomas de pánico.
+* R "Siento que mi pene se está encogiendo y que va a desaparecer. Me da mucho miedo y me pongo muy nervioso. Sé que suena absurdo, pero es lo que siento..."
+* Paciente 76
+* E 42 años
+* S Femenino
+* O Escritora
+* D Trastorno de identidad disociativo / Psicoterapia
+* D Trastorno límite de la personalidad / Terapia dialéctica conductual
+* D Síndrome de Capgras (delirio de impostores) / Antipsicóticos y terapia
+* E Delirio en el que la persona cree que un familiar, amigo o pareja ha sido reemplazado por un impostor idéntico.
+* F Los antipsicóticos reducen la intensidad de las creencias delirantes, la terapia ayuda a cuestionar y modificar las percepciones erróneas.
+* R "Sé que mi marido parece él, pero estoy segura de que no es él. Es como si lo hubieran cambiado por otra persona idéntica. No sé qué hacer..."
+P77
+* E 19 años
+* S Masculino
+* O Estudiante
+* D Depresión / Antidepresivos
+* D Trastorno de ansiedad social / Terapia cognitivo-conductual
+* D Síndrome de Alicia en el País de las Maravillas / Manejo de síntomas y terapia
+* E Trastorno neurológico que causa distorsiones en la percepción del tamaño, la forma o la distancia de los objetos.
+* F Manejo de los síntomas (antimigrañosos si está relacionado con migrañas), terapia para afrontar las distorsiones perceptivas.
+* R "A veces, veo las cosas más grandes o más pequeñas de lo que son en realidad. También me parece que las distancias están distorsionadas. Es como si estuviera en un sueño..."
+P78
+* E 35 años
+* S Femenino
+* O Artista
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno obsesivo-compulsivo (TOC) / Terapia de exposición y prevención de respuesta
+* D Tricotilomanía / Terapia y medicamentos
+* E Trastorno de control de impulsos que lleva a arrancarse el cabello de forma compulsiva.
+* F La terapia ayuda a identificar los desencadenantes y desarrollar estrategias de afrontamiento, los medicamentos pueden reducir los impulsos y la ansiedad.
+* R "No puedo evitar arrancarme el cabello. Lo hago sin darme cuenta, sobre todo cuando estoy nerviosa o estresada. Sé que es un problema, pero no puedo controlarlo..."
+P79
+* E 52 años
+* S Masculino
+* O Gerente
+* D Trastorno de personalidad narcisista / Psicoterapia
+* D Trastorno bipolar / Estabilizadores del estado de ánimo
+* D Síndrome de Jerusalén / Intervención en crisis y atención psiquiátrica
+* E Trastorno psicótico breve con delirios religiosos o mesiánicos, a menudo desencadenado por una visita a Jerusalén.
+* F La intervención en crisis ayuda a controlar los síntomas agudos, la atención psiquiátrica aborda los problemas de salud mental subyacentes.
+* R "Después de visitar Jerusalén, me siento diferente. Siento que tengo una misión divina, que debo salvar al mundo. Sé que suena extraño, pero es lo que siento..."
+P80
+* E 24 años
+* S Femenino
+* O Bailarina
+* D Anorexia nerviosa / Terapia nutricional y psicoterapia
+* D Trastorno dismórfico corporal / Psicoterapia
+* D Dismorfofobia muscular (vigorexia) / Psicoterapia y manejo de la ansiedad
+* E Trastorno dismórfico corporal centrado en la musculatura, con preocupación excesiva por la percepción de ser demasiado delgado o débil.
+* F La psicoterapia ayuda a modificar las creencias distorsionadas sobre la imagen corporal, el manejo de la ansiedad reduce la necesidad de ejercicio compulsivo.
+* R "Aunque hago mucho ejercicio, me veo delgada y débil. No estoy conforme con mi cuerpo, necesito aumentar mi masa muscular. Paso horas en el gimnasio, pero no es suficiente..."
+Paciente 81
+* E 39 años
+* S Masculino
+* O Profesor
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno obsesivo-compulsivo (TOC) / Terapia de exposición y prevención de respuesta
+* D Hipocondría / Psicoterapia y manejo de la ansiedad
+* E Preocupación excesiva y miedo a tener una enfermedad grave, a pesar de la ausencia de síntomas o evidencia médica.
+* F La psicoterapia ayuda a identificar y modificar los patrones de pensamiento negativos, el manejo de la ansiedad reduce la preocupación y el miedo.
+* R "Estoy seguro de que tengo una enfermedad grave, aunque los médicos no encuentran nada. Me preocupa cada pequeño dolor o molestia, y no puedo dejar de pensar en ello..."
+P82
+* E 27 años
+* S Femenino
+* O Escritora
+* D Trastorno depresivo mayor / Antidepresivos
+* D Trastorno de ansiedad social / Terapia cognitivo-conductual
+* D Trastorno de despersonalización/desrealización / Psicoterapia y manejo de la ansiedad
+* E Sensación persistente de estar separado del propio cuerpo o de la realidad, como si se estuviera observando desde fuera.
+* F La psicoterapia ayuda a comprender y manejar los síntomas, el manejo de la ansiedad reduce la intensidad de las experiencias disociativas.
+* R "Siento que no soy yo misma, como si estuviera fuera de mi cuerpo observándome. La realidad me parece extraña e irreal. Es una sensación muy angustiante..."
+P83
+* E 56 años
+* S Masculino
+* O Comerciante
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno de pánico / Benzodiazepinas
+* D Taijin Kyofusho / Psicoterapia y medicamentos
+* E Trastorno de ansiedad social específico de la cultura japonesa, con miedo intenso a ofender o avergonzar a los demás con la propia apariencia, olor o comportamiento.
+* F La psicoterapia ayuda a comprender y modificar las creencias irracionales, los medicamentos pueden reducir la ansiedad y los síntomas físicos.
+* R "Me da mucha vergüenza estar con otras personas. Siento que las ofendo con mi presencia, que mi olor o mi forma de hablar les molesta. Evito salir de casa para no tener que interactuar con nadie..."
+P84
+* E 32 años
+* S Femenino
+* O Veterinaria
+* D Depresión / Antidepresivos
+* D Trastorno bipolar / Estabilizadores del estado de ánimo
+* D Ciclotimia / Psicoterapia y medicamentos
+* E Trastorno del estado de ánimo con fluctuaciones cíclicas entre hipomanía y depresión leve.
+* F La psicoterapia ayuda a manejar los cambios de humor y desarrollar estrategias de afrontamiento, los medicamentos pueden estabilizar el estado de ánimo.
+* R "Tengo cambios de humor frecuentes. A veces estoy eufórica y llena de energía, pero otras veces me siento triste y sin ganas de hacer nada. Es como una montaña rusa emocional..."
+P85
+* E 48 años
+* S Masculino
+* O Gerente
+* D Trastorno obsesivo-compulsivo (TOC) / Terapia de exposición y prevención de respuesta
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno dismórfico corporal (TDC) / Psicoterapia y medicamentos
+* E Preocupación excesiva por defectos percibidos en la apariencia física.
+* F La psicoterapia ayuda a modificar las creencias distorsionadas sobre la imagen corporal, los medicamentos pueden reducir la ansiedad y los comportamientos compulsivos.
+* R "Estoy obsesionado con un pequeño defecto en mi nariz. No puedo dejar de mirarme al espejo, y siento que todo el mundo se fija en ello. Me da mucha vergüenza salir de casa..."
+Paciente 86
+* E 25 años
+* S Femenino
+* O Bailarina
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno de pánico / Terapia cognitivo-conductual
+* D Trastorno de ansiedad por enfermedad / Psicoterapia y manejo de la ansiedad
+* E Preocupación excesiva y miedo a tener o contraer una enfermedad grave, a pesar de la ausencia de síntomas o evidencia médica.
+* F La psicoterapia ayuda a identificar y modificar los patrones de pensamiento negativos, el manejo de la ansiedad reduce la preocupación y el miedo.
+* R "Estoy constantemente preocupada por mi salud. Cualquier pequeño dolor o molestia me hace pensar que tengo una enfermedad grave. Me paso el día buscando información en internet y consultando a médicos..."
+P87
+* E 39 años
+* S Masculino
+* O Músico
+* D Depresión / Antidepresivos
+* D Trastorno de estrés postraumático / Terapia de exposición
+* D Trastorno de identidad disociativo (TID) / Psicoterapia
+* E Presencia de dos o más identidades o estados de personalidad distintos. Lagunas en la memoria, cambios en el comportamiento y la identidad.
+* F La psicoterapia ayuda a integrar las diferentes identidades y procesar experiencias traumáticas.
+* R "A veces siento que no soy yo mismo, como si hubiera otra persona dentro de mí. No recuerdo cosas que he hecho o dicho, y mi personalidad cambia de repente. Es muy confuso..."
+P88
+* E 52 años
+* S Femenino
+* O Ama de casa
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Depresión / Antidepresivos
+* D Trastorno de somatización / Psicoterapia y manejo de síntomas
+* E Presencia de múltiples síntomas físicos sin causa médica aparente, que causan malestar significativo o deterioro en la vida diaria.
+* F La psicoterapia ayuda a comprender y manejar los síntomas, el manejo de síntomas se enfoca en aliviar el dolor y otros problemas físicos.
+* R "Tengo muchos problemas de salud, pero los médicos no encuentran nada. Me duele la cabeza, el estómago, los músculos... Estoy cansada todo el tiempo, y no puedo hacer vida normal..."
+P89
+* E 24 años
+* S Masculino
+* O Estudiante
+* D Esquizofrenia / Antipsicóticos
+* D Trastorno bipolar / Estabilizadores del estado de ánimo
+* D Trastorno esquizoafectivo / Antipsicóticos, estabilizadores del estado de ánimo y terapia
+* E Combinación de síntomas de esquizofrenia y trastorno del estado de ánimo (depresión o bipolaridad). Delirios, alucinaciones, cambios de humor, problemas de pensamiento.
+* F Los antipsicóticos controlan los síntomas psicóticos, los estabilizadores del estado de ánimo regulan el humor, la terapia ayuda a desarrollar mecanismos de afrontamiento.
+* R "Oigo voces que me dicen cosas malas, y a veces veo cosas que no están ahí. También tengo cambios de humor bruscos, paso de la euforia a la tristeza sin motivo aparente..."
+P90
+* E 38 años
+* S Femenino
+* O Artista
+* D Trastorno de personalidad límite / Terapia dialéctica conductual
+* D Trastorno histriónico de la personalidad / Psicoterapia
+* D Trastorno facticio / Psicoterapia
+* E Fingir o provocar deliberadamente síntomas físicos o psicológicos para asumir el papel de enfermo.
+* F La psicoterapia ayuda a comprender las causas subyacentes del comportamiento y a desarrollar estrategias de afrontamiento más saludables.
+* R "No puedo evitar fingir enfermedades. Me gusta la atención que recibo cuando estoy enferma. Sé que no está bien, pero no puedo controlarlo..."
+Paciente 91
+* E 62 años
+* S Masculino
+* O Jubilado
+* D Demencia / Inhibidores de la colinesterasa
+* D Delirio / Antipsicóticos
+* D Síndrome de Ganser / Manejo de síntomas y terapia
+* E Trastorno disociativo caracterizado por respuestas aproximadas o absurdas a preguntas sencillas, a menudo en un contexto de estrés psicológico.
+* F El manejo de síntomas se enfoca en aliviar el estrés y la ansiedad, la terapia ayuda a abordar los problemas psicológicos subyacentes.
+* R "Sé las respuestas a las preguntas que me hacen, pero me salen mal. Es como si mi mente estuviera bloqueada. Estoy muy estresado y confundido..."
+P92
+* E 28 años
+* S Femenino
+* O Enfermera
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno obsesivo-compulsivo (TOC) / Terapia de exposición y prevención de respuesta
+* D Trastorno de excoriación (dermatilomanía) / Terapia y medicamentos
+* E Trastorno de control de impulsos que lleva a rascarse, hurgarse o pellizcarse la piel de forma compulsiva.
+* F La terapia ayuda a identificar los desencadenantes y desarrollar estrategias de afrontamiento, los medicamentos pueden reducir los impulsos y la ansiedad.
+* R "No puedo evitar rascarme la piel, incluso hasta hacerme daño. Lo hago sin darme cuenta, sobre todo cuando estoy nerviosa o estresada. Sé que es un problema, pero no puedo controlarlo..."
+P93
+* E 45 años
+* S Masculino
+* O Abogado
+* D Trastorno de personalidad paranoide / Psicoterapia
+* D Esquizofrenia / Antipsicóticos
+* D Trastorno delirante / Antipsicóticos y terapia
+* E Presencia de uno o más delirios no extraños, que persisten durante al menos un mes.
+* F Los antipsicóticos reducen la intensidad de las creencias delirantes, la terapia ayuda a desarrollar mecanismos de afrontamiento y a mejorar el funcionamiento social.
+* R "Estoy seguro de que mi jefe me está espiando y que quiere despedirme. Sé que suena paranoico, pero tengo pruebas. He encontrado micrófonos escondidos en mi oficina, y estoy seguro de que está controlando mis llamadas..."
+P94
+* E 34 años
+* S Femenino
+* O Escritora
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Depresión / Antidepresivos
+* D Trastorno de conversión / Psicoterapia y fisioterapia
+* E Presencia de síntomas neurológicos, como parálisis, ceguera o convulsiones, sin causa médica aparente y asociados a factores psicológicos.
+* F La psicoterapia ayuda a abordar los factores psicológicos que contribuyen a los síntomas, la fisioterapia ayuda a recuperar la función física.
+* R "De repente, perdí la sensibilidad en las piernas y no puedo caminar. Los médicos no encuentran nada, pero yo sé que algo va mal. Estoy muy asustada..."
+P95
+* E 58 años
+* S Masculino
+* O Taxista
+* D Demencia / Inhibidores de la colinesterasa
+* D Delirio / Antipsicóticos
+* D Síndrome de la mano ajena / Terapia ocupacional y manejo de síntomas
+* E Trastorno neurológico en el que la persona experimenta que una de sus manos actúa de forma independiente y no la puede controlar.
+* F La terapia ocupacional ayuda a mejorar el control y la función de la mano afectada, el manejo de síntomas se enfoca en reducir los movimientos involuntarios.
+* R "Mi mano izquierda se mueve sola, como si tuviera vida propia. No puedo controlarla, Paciente 96
+* E 23 años
+* S Femenino
+* O Estudiante de arte
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Fobia social / Terapia cognitivo-conductual
+* D Trastorno dismórfico corporal (TDC) centrado en una parte específica del cuerpo / Psicoterapia y medicamentos
+* E Preocupación excesiva por un defecto percibido en una parte específica del cuerpo, como la nariz, el cabello o la piel.
+* F La psicoterapia ayuda a modificar las creencias distorsionadas sobre la imagen corporal, los medicamentos pueden reducir la ansiedad y los comportamientos compulsivos.
+* R "Estoy obsesionada con la forma de mi nariz. La veo enorme y deforme, y siento que todo el mundo se fija en ella. Me da mucha vergüenza salir de casa y evito las fotos..."
+P97
+* E 48 años
+* S Masculino
+* O Programador
+* D Depresión / Antidepresivos
+* D Trastorno bipolar / Estabilizadores del estado de ánimo
+* D Ciclotimia / Psicoterapia y medicamentos
+* E Trastorno del estado de ánimo con fluctuaciones cíclicas entre hipomanía y depresión leve.
+* F La psicoterapia ayuda a manejar los cambios de humor y desarrollar estrategias de afrontamiento, los medicamentos pueden estabilizar el estado de ánimo.
+* R "Mi estado de ánimo es como una montaña rusa. A veces estoy lleno de energía y con muchas ideas, pero otras veces me siento triste y sin motivación. Es difícil mantener un equilibrio..."
+P98
+* E 32 años
+* S Femenino
+* O Veterinaria
+* D Trastorno de pánico / Benzodiazepinas
+* D Agorafobia / Terapia de exposición
+* D Trastorno de ansiedad por separación / Psicoterapia y medicamentos
+* E Miedo o ansiedad excesiva ante la separación de las figuras de apego.
+* F La psicoterapia ayuda a comprender y manejar la ansiedad, los medicamentos pueden reducir los síntomas de ansiedad.
+* R "Me aterra estar lejos de mi familia. Me pongo muy ansiosa cuando no están cerca, y pienso que algo malo les puede pasar. Evito salir de casa sola y me cuesta mucho dormir si no están conmigo..."
+P99
+* E 55 años
+* S Masculino
+* O Jubilado
+* D Demencia / Inhibidores de la colinesterasa
+* D Trastorno delirante / Antipsicóticos
+* D Síndrome de Geschwind / Anticonvulsivos y terapia
+* E Trastorno neurológico asociado a la epilepsia del lóbulo temporal. Hiperreligiosidad, hipergrafía, cambios de personalidad.
+* F Los anticonvulsivos controlan las convulsiones, la terapia ayuda a manejar los cambios de comportamiento y personalidad.
+* R "Desde que empecé a tener convulsiones, me siento diferente. Me he vuelto muy religioso, escribo mucho y tengo visiones. Mi familia dice que he cambiado..."
+P100
+* E 28 años
+* S Femenino
+* O Músico
+* D Trastorno de ansiedad social / Terapia cognitivo-conductual
+* D Trastorno de personalidad por evitación / Psicoterapia
+* D Trastorno de identidad de la integridad corporal (BIID) / Psicoterapia
+* E Deseo intenso de amputarse una o más extremidades sanas.
+* F La psicoterapia ayuda a comprender las causas subyacentes del deseo y a desarrollar estrategias de afrontamiento.
+* R "Siento que mis piernas no me pertenecen, que deberían ser amputadas. Sé que suena extraño, pero es un deseo muy fuerte que no puedo controlar..."
+* y a veces hace cosas que no quiero. Es muy extraño y me asusta..."
+Paciente 101
+* E 42 años
+* S Masculino
+* O Bibliotecario
+* D Trastorno obsesivo-compulsivo (TOC) / Terapia de exposición y prevención de respuesta
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Síndrome de Tourette / Medicamentos y terapia
+* E Trastorno neurológico caracterizado por tics motores y vocales involuntarios.
+* F Los medicamentos ayudan a controlar los tics, la terapia ayuda a desarrollar estrategias de afrontamiento y a mejorar la calidad de vida.
+* R "Tengo tics desde que era niño. Hago movimientos y sonidos involuntarios, y no puedo controlarlos. A veces, la gente se ríe de mí, y eso me hace sentir muy mal..."
+P102
+* E 25 años
+* S Femenino
+* O Estudiante de arte
+* D Trastorno límite de la personalidad / Terapia dialéctica conductual
+* D Trastorno histriónico de la personalidad / Psicoterapia
+* D Síndrome de Münchausen / Psicoterapia
+* E Trastorno facticio en el que la persona finge o provoca síntomas en otra persona, generalmente un hijo o dependiente.
+* F La psicoterapia ayuda a comprender las causas subyacentes del comportamiento y a desarrollar estrategias de afrontamiento más saludables.
+* R "Mi hijo siempre está enfermo. Lo llevo al médico constantemente, pero no encuentran la causa. Sé que algo le pasa, y no pararé hasta encontrar una solución..."
+P103
+* E 38 años
+* S Masculino
+* O Escritor
+* D Esquizofrenia / Antipsicóticos
+* D Trastorno delirante / Antipsicóticos y terapia
+* D Síndrome de Folie à Deux (trastorno psicótico compartido) / Separación de las personas involucradas y tratamiento individual
+* E Trastorno delirante compartido por dos o más personas con una relación cercana.
+* F Separar a las personas involucradas y tratar a cada una individualmente con antipsicóticos y terapia.
+* R "Mi esposa y yo compartimos la misma creencia: estamos siendo perseguidos por el gobierno. Sabemos que suena loco, pero tenemos pruebas. Hemos visto agentes secretos siguiéndonos, y nuestras llamadas están intervenidas..."
+P104
+* E 52 años
+* S Femenino
+* O Ama de casa
+* D Trastorno obsesivo-compulsivo (TOC) / Terapia de exposición y prevención de respuesta
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Trastorno dismórfico corporal (TDC) con delirio de dismorfia / Antipsicóticos y terapia
+* E Preocupación excesiva por un defecto percibido en la apariencia física, que llega a ser delirante.
+* F Los antipsicóticos reducen la intensidad de las creencias delirantes, la terapia ayuda a modificar las percepciones distorsionadas sobre la imagen corporal.
+* R "Mi cara está deforme, aunque los demás me digan que no es así. No puedo salir de casa porque me da vergüenza que la gente me vea. Estoy segura de que todos se ríen de mí..."
+P105
+* E 25 años
+* S Masculino
+* O Músico
+* D Depresión / Antidepresivos
+* D Trastorno de ansiedad social / Terapia cognitivo-conductual
+* D Síndrome de referencia olfativa / Psicoterapia y medicamentos
+* E Creencia delirante de que uno mismo emite un olor corporal desagradable.
+* F La psicoterapia ayuda a modificar las creencias delirantes, los medicamentos pueden reducir la ansiedad y la vergüenza.
+* R "Sé que huelo mal, aunque los demás me digan que no es cierto. El olor es horrible, y estoy seguro de que la gente se aparta de mí por eso. Evito salir de casa para no molestar a nadie..."
+Paciente 106
+* E 42 años
+* S Femenino
+* O Profesora
+* D Trastorno de pánico / Benzodiazepinas
+* D Agorafobia / Terapia de exposición
+* D Trastorno de ansiedad por enfermedad / Psicoterapia y manejo de la ansiedad
+* E Preocupación excesiva y miedo a tener o contraer una enfermedad grave, a pesar de la ausencia de síntomas o evidencia médica.
+* F La psicoterapia ayuda a identificar y modificar los patrones de pensamiento negativos, el manejo de la ansiedad reduce la preocupación y el miedo.
+* R "Estoy constantemente preocupada por mi salud. Cualquier pequeño dolor o molestia me hace pensar que tengo una enfermedad grave. Me paso el día buscando información en internet y consultando a médicos..."
+P107
+* E 35 años
+* S Masculino
+* O Artista
+* D Trastorno de estrés postraumático / Terapia de exposición
+* D Trastorno límite de la personalidad / Terapia dialéctica conductual
+* D Trastorno de identidad disociativo (TID) / Psicoterapia
+* E Presencia de dos o más identidades o estados de personalidad distintos. Lagunas en la memoria, cambios en el comportamiento y la identidad.
+* F La psicoterapia ayuda a integrar las diferentes identidades y procesar experiencias traumáticas.
+* R "A veces siento que no soy yo mismo, como si hubiera otra persona dentro de mí. No recuerdo cosas que he hecho o dicho, y mi personalidad cambia de repente. Es muy confuso..."
+P108
+* E 58 años
+* S Femenino
+* O Jubilada
+* D Depresión / Antidepresivos
+* D Fibromialgia / Analgésicos
+* D Trastorno de somatización / Psicoterapia y manejo de síntomas
+* E Presencia de múltiples síntomas físicos sin causa médica aparente, que causan malestar significativo o deterioro en la vida diaria.
+* F La psicoterapia ayuda a comprender y manejar los síntomas, el manejo de síntomas se enfoca en aliviar el dolor y otros problemas físicos.
+* R "Tengo muchos problemas de salud, pero los médicos no encuentran nada. Me duele la cabeza, el estómago, los músculos... Estoy cansada todo el tiempo, y no puedo hacer vida normal..."
+P109
+* E 28 años
+* S Masculino
+* O Ingeniero
+* D Trastorno bipolar / Estabilizadores del estado de ánimo
+* D Esquizofrenia / Antipsicóticos
+* D Trastorno esquizoafectivo / Antipsicóticos, estabilizadores del estado de ánimo y terapia
+* E Combinación de síntomas de esquizofrenia y trastorno del estado de ánimo (depresión o bipolaridad). Delirios, alucinaciones, cambios de humor, problemas de pensamiento.
+* F Los antipsicóticos controlan los síntomas psicóticos, los estabilizadores del estado de ánimo regulan el humor, la terapia ayuda a desarrollar mecanismos de afrontamiento.
+* R "Oigo voces que me dicen cosas malas, y a veces veo cosas que no están ahí. También tengo cambios de humor bruscos, paso de la euforia a la tristeza sin motivo aparente..."
+P110
+* E 45 años
+* S Femenino
+* O Abogada
+* D Trastorno de personalidad histriónica / Psicoterapia
+* D Trastorno límite de la personalidad / Terapia dialéctica conductual
+* D Trastorno facticio / Psicoterapia
+* E Fingir o provocar deliberadamente síntomas físicos o psicológicos para asumir el papel de enfermo.
+* F La psicoterapia ayuda a comprender las causas subyacentes del comportamiento y a desarrollar estrategias de afrontamiento más saludables.
+* R "No puedo evitar fingir enfermedades. Me gusta la atención que recibo cuando estoy enferma. Sé que no está bien, pero no puedo controlarlo..."
+Paciente 111
+* E 32 años
+* S Femenino
+* O Antropóloga (trabajando en una comunidad aislada)
+* D Malaria / Antipalúdicos
+* D Dengue / Tratamiento sintomático
+* D Viruela / Cuidados de soporte (la vacuna erradicó la viruela en 1980)
+* E Enfermedad viral altamente contagiosa que causaba fiebre alta, erupciones pustulosas y cicatrices.
+* F No existía tratamiento específico. Se proporcionaban cuidados de soporte para aliviar los síntomas y prevenir complicaciones.
+* R "Llevo días con fiebre alta y un dolor de cabeza terrible. Me han salido unas ampollas en la piel que pican mucho. El médico local no sabe qué es, pero me preocupa que sea algo contagioso..."
+P112
+* E 78 años
+* S Masculino
+* O Jubilado (ex-marinero)
+* D Escorbuto / Suplementos de vitamina C
+* D Deficiencia de vitamina B12 / Inyecciones de vitamina B12
+* D Beriberi / Suplementos de tiamina (vitamina B1)
+* E Deficiencia de tiamina (vitamina B1) que afecta el sistema nervioso y cardiovascular. Debilidad muscular, pérdida de sensibilidad, problemas cardíacos.
+* F Los suplementos de tiamina corrigen la deficiencia y mejoran los síntomas.
+* R "Me siento débil y cansado todo el tiempo. Apenas puedo caminar, y me tiemblan las manos. El médico me ha dicho que puede ser por la edad, pero yo no estoy seguro..."
+P113
+* E 5 años
+* S Femenino
+* O Ninguna (vive en una región con baja cobertura de vacunación)
+* D Sarampión / Tratamiento sintomático
+* D Rubeola / Tratamiento sintomático
+* D Poliomielitis / Cuidados de soporte (la vacuna ha reducido drásticamente la incidencia de la poliomielitis)
+* E Enfermedad viral que afecta el sistema nervioso, causando parálisis.
+* F No existe cura para la polio. Los cuidados de soporte se enfocan en manejar los síntomas y prevenir complicaciones.
+* R "Mamá dice que empecé a caminar más tarde que los demás niños, y que siempre he sido un poco torpe. Ahora, me cuesta mover las piernas, y no puedo correr ni saltar como mis amigos..."
+P114
+* E 42 años
+* S Masculino
+* O Historiador
+* D Psoriasis / Corticosteroides tópicos
+* D Lepra / Antibióticos
+* D Lepra (enfermedad de Hansen) / Terapia multidrogas
+* E Enfermedad infecciosa crónica causada por la bacteria Mycobacterium leprae. Lesiones cutáneas, daño neurológico, deformidades.
+* F La terapia multidrogas elimina la bacteria y cura la enfermedad.
+* R "Me han salido unas manchas claras en la piel que no me duelen ni pican. También he perdido sensibilidad en las manos y los pies. El médico no sabe qué es, pero me preocupa que sea algo contagioso..."
+P115
+* E 28 años
+* S Femenino
+* O Arqueóloga (trabajando en una excavación)
+* D Fiebre tifoidea / Antibióticos
+* D Malaria / Antipalúdicos
+* D Peste bubónica / Antibióticos (la peste bubónica está controlada pero no erradicada)
+* E Enfermedad infecciosa grave causada por la bacteria Yersinia pestis. Fiebre alta, ganglios linfáticos inflamados, neumonía.
+* F Los antibióticos eliminan la bacteria y curan la enfermedad.
+* R "Llevo días con fiebre alta y escalofríos. También tengo un bulto doloroso en la ingle. El médico local no sabe qué es, pero me preocupa que sea algo grave..."
+Paciente 116
+* E 42 años
+* S Masculino
+* O Músico
+* D Síncope vasovagal / Evitar desencadenantes
+* D Epilepsia / Anticonvulsivos
+* D Síndrome de la persona rígida / Medicamentos para relajar los músculos y terapia física
+* E Trastorno neurológico raro que causa rigidez muscular progresiva, espasmos y posturas anormales.
+* F Los medicamentos relajan los músculos y reducen los espasmos, la terapia física mejora la movilidad y la función.
+* R "Mis músculos se están volviendo rígidos, como si me estuvieran convirtiendo en una estatua. Tengo espasmos dolorosos, y me cuesta moverme con normalidad. Es como si mi cuerpo se estuviera rebelando contra mí..."
+P117
+* E 28 años
+* S Femenino
+* O Artista
+* D Alergia / Antihistamínicos
+* D Dermatitis / Cremas tópicas
+* D Urticaria acuagénica / Evitar el contacto con el agua, antihistamínicos
+* E Reacción alérgica rara al agua, que causa ronchas y picazón al contacto con la piel.
+* F Evitar el contacto con el agua y tomar antihistamínicos para controlar los síntomas.
+* R "Me salen ronchas y me pica la piel cada vez que me baño o me mojo. Es como si fuera alérgica al agua. Es muy incómodo y me limita mucho..."
+P118
+* E 55 años
+* S Masculino
+* O Contador
+* D Migraña / Analgésicos
+* D Sinusitis / Antibióticos
+* D Cefalea en racimos / Oxígeno, triptanes, cirugía
+* E Dolores de cabeza intensos y unilaterales que ocurren en grupos o racimos.
+* F El oxígeno alivia el dolor agudo, los triptanes previenen los ataques, la cirugía puede ser una opción en casos graves.
+* R "Tengo unos dolores de cabeza horribles, siempre en el mismo lado de la cabeza. Son tan intensos que siento que me va a explotar. Me duran unas horas y luego desaparecen, pero vuelven a aparecer al cabo de un tiempo..."
+P119
+* E 32 años
+* S Femenino
+* O Veterinaria
+* D Síndrome del intestino irritable / Dieta baja en FODMAP
+* D Enfermedad celíaca / Dieta sin gluten
+* D Síndrome de vómitos cíclicos / Medicamentos para prevenir los vómitos, terapia
+* E Episodios recurrentes de náuseas y vómitos intensos, sin causa aparente.
+* F Los medicamentos previenen los vómitos, la terapia ayuda a identificar los desencadenantes y desarrollar estrategias de afrontamiento.
+* R "Tengo episodios de vómitos intensos que duran horas o incluso días. No sé por qué me pasa, pero es muy debilitante. Los médicos no encuentran la causa..."
+P120
+* E 48 años
+* S Masculino
+* O Gerente
+* D Insomnio / Pastillas para dormir
+* D Síndrome de piernas inquietas / Medicamentos
+* D Síndrome de Kleine-Levin / Medicamentos para estabilizar el estado de ánimo y el sueño
+* E Trastorno neurológico raro que causa episodios recurrentes de somnolencia excesiva, alteraciones del comportamiento y aumento del apetito.
+* F Los medicamentos ayudan a controlar los episodios y mejorar la calidad de vida.
+* R "Tengo episodios en los que duermo durante días seguidos. Cuando me despierto, estoy desorientado y tengo mucha hambre. No recuerdo lo que ha pasado durante el Paciente 121
+* E 25 años
+* S Femenino
+* O Bailarina
+* D Artritis / Antiinflamatorios
+* D Fibromialgia / Analgésicos
+* D Síndrome de dolor regional complejo (SDRC) / Fisioterapia, terapia del dolor, medicamentos
+* E Trastorno de dolor crónico que afecta una extremidad, generalmente después de una lesión. Dolor intenso, cambios en la piel, hinchazón, rigidez.
+* F La fisioterapia mejora la movilidad y reduce el dolor, la terapia del dolor ayuda a manejar los síntomas, los medicamentos pueden incluir analgésicos, antidepresivos o anticonvulsivos.
+* R "Después de torcerme el tobillo, el dolor no se ha ido. Es un dolor intenso y quemante, y mi pie está hinchado y sensible al tacto. Los médicos no entienden por qué el dolor no mejora..."
+P122
+* E 48 años
+* S Masculino
+* O Gerente
+* D Esquizofrenia / Antipsicóticos
+* D Trastorno bipolar / Estabilizadores del estado de ánimo
+* D Síndrome de la mano alienígena / Terapia ocupacional, manejo de síntomas
+* E Trastorno neurológico en el que la persona experimenta que una de sus manos actúa de forma independiente y no la puede controlar.
+* F La terapia ocupacional ayuda a mejorar el control y la función de la mano afectada, el manejo de síntomas se enfoca en reducir los movimientos involuntarios.
+* R "Mi mano izquierda se mueve sola, como si tuviera vida propia. No puedo controlarla, y a veces hace cosas que no quiero. Es muy extraño y me asusta..."
+P123
+* E 32 años
+* S Femenino
+* O Escritora
+* D Depresión / Antidepresivos
+* D Trastorno de ansiedad generalizada / Ansiolíticos
+* D Síndrome de fatiga crónica / Manejo de síntomas y terapia
+* E Fatiga persistente e inexplicable que no mejora con el descanso, acompañada de otros síntomas como dolor muscular, problemas de sueño y dificultades cognitivas.
+* F El manejo de síntomas se enfoca en aliviar la fatiga y otros síntomas, la terapia ayuda a mejorar la calidad de vida.
+* R "Estoy agotada todo el tiempo, incluso después de dormir mucho. Me cuesta concentrarme, y tengo dolores musculares. Los médicos no encuentran la causa y me dicen que es estrés, pero yo sé que es algo más..."
+P124
+* E 55 años
+* S Masculino
+* O Músico
+* D Tinnitus / Terapia de sonido
+* D Enfermedad de Ménière / Medicamentos
+* D Síndrome de la cabeza explosiva / Manejo de la ansiedad, relajación
+* E Trastorno del sueño que causa la percepción de un ruido fuerte y repentino en la cabeza al quedarse dormido o al despertar.
+* F El manejo de la ansiedad y las técnicas de relajación ayudan a reducir la frecuencia e intensidad de los episodios.
+* R "A veces, cuando me estoy quedando dormido o me despierto, oigo un ruido fuerte en mi cabeza, como una explosión. Me asusta mucho, y me cuesta volver a dormir..."
+P125
+* E 28 años
+* S Femenino
+* O Veterinaria
+* D Alergia / Antihistamínicos
+* D Asma / Inhaladores
+* D Síndrome de hiperventilación / Técnicas de respiración, manejo de la ansiedad
+* E Respiración rápida y profunda que provoca desequilibrio en los niveles de oxígeno y dióxido de carbono en la sangre, causando mareos, aturdimiento, hormigueo, palpitaciones y ansiedad.
+* F Las técnicas de respiración ayudan a controlar la respiración y restaurar el equilibrio de gases en la sangre, el manejo de la ansiedad aborda los factores psicológicos que contribuyen al síndrome.
+* R "De repente, siento que me falta el aire y empiezo a respirar muy rápido. Me mareo, me siento débil y me tiemblan las manos. Es como si me fuera a desmayar..."
+* episodio..."
+
+
+
+
+Paciente 126
+E 58 años
+S Masculino
+O Jubilado
+S Debilidad muscular, calambres, entumecimiento y hormigueo en manos y pies, dificultad para tragar.
+D
+* Neuropatía diabética / Gabapentina
+* Síndrome del túnel carpiano / Férula de muñeca
+D Esclerosis lateral amiotrófica (ELA)
+D
+* E Desconocida, se cree que es una combinación de factores genéticos y ambientales.
+* F Degeneración progresiva de las neuronas motoras, que controlan el movimiento muscular voluntario.
+* T Riluzol (ralentiza la progresión de la enfermedad), cuidados paliativos.
+R "Me siento débil y torpe, se me caen las cosas de las manos. Tengo calambres y hormigueo en las piernas. A veces me cuesta tragar. El médico me dijo que podía ser por la diabetes o el túnel carpiano, tomo gabapentina y uso una férula, pero no mejora mucho. Me preocupa que sea algo más serio, siento que los músculos se me están debilitando..."
+P127
+E 32 años
+S Femenino
+O Diseñadora gráfica
+S Fatiga extrema, dolor muscular generalizado, problemas de sueño, niebla mental, sensibilidad a la luz y al ruido.
+D
+* Depresión / Antidepresivos
+* Fibromialgia / Analgésicos
+D Encefalomielitis miálgica/síndrome de fatiga crónica (EM/SFC)
+D
+* E Desconocida, posiblemente desencadenada por una infección viral o un evento estresante.
+* F Disfunción del sistema nervioso central y sistema inmunitario.
+* T Manejo de los síntomas, terapia cognitivo-conductual, ejercicio gradual.
+R "Estoy agotada todo el tiempo, como si tuviera gripe. Me duele todo el cuerpo y me cuesta dormir. No puedo concentrarme y me siento confusa. El médico me dijo que era depresión o fibromialgia, tomo antidepresivos y analgésicos, pero no me ayudan mucho. También me molesta la luz y el ruido, y tengo la garganta inflamada seguido..."
+P128
+E 45 años
+S Masculino
+O Gerente de ventas
+S Dolor abdominal recurrente, diarrea, distensión abdominal, pérdida de peso.
+D
+* Síndrome del intestino irritable / Dieta baja en FODMAP
+* Intolerancia a la lactosa / Dieta sin lactosa
+D Enfermedad de Crohn
+D
+* E Desconocida, se cree que es autoinmune.
+* F Inflamación crónica del tracto digestivo, causando daño intestinal.
+* T Medicamentos antiinflamatorios, inmunosupresores, cirugía en algunos casos.
+R "Tengo diarrea y dolor de panza seguido, y la panza se me hincha mucho. He bajado de peso sin querer. El médico me dijo que era colon irritable o intolerancia a la lactosa, así que sigo una dieta especial, pero no veo mucha mejoría. A veces tengo sangre en la materia fecal y me siento muy débil..."
+P129
+E 28 años
+S Femenino
+O Veterinaria
+S Fatiga persistente, dolor de garganta recurrente, inflamación de ganglios linfáticos, fiebre ocasional.
+D
+* Mononucleosis / Reposo
+* Infecciones virales recurrentes / Antibióticos
+D Leucemia linfocítica crónica
+D
+* E Cáncer de la sangre que afecta los glóbulos blancos.
+* F Las células leucémicas se multiplican de manera descontrolada, afectando la función del sistema inmunológico.
+* T Quimioterapia, radioterapia, trasplante de médula ósea.
+R "Estoy agotada todo el tiempo, y me duele la garganta seguido. Tengo los ganglios del cuello inflamados y a veces me da fiebre. El médico me dijo que era mononucleosis o un virus, tomo antibióticos y descanso, pero no me siento mejor. También me salen moretones con facilidad y estoy muy pálida..."
+P130
+E 62 años
+S Masculino
+O Jubilado
+S Dificultad para respirar, tos crónica, sibilancias.
+D
+* Asma / Inhaladores (medicación actual del paciente)
+* Bronquitis crónica / Antibióticos
+D Fibrosis pulmonar idiopática
+D
+* E Desconocida, se cree que es autoinmune.
+* F Cicatrización progresiva del tejido pulmonar, lo que dificulta la respiración. Los inhaladores para el asma pueden ofrecer un alivio temporal.
+* T Medicamentos anti-fibróticos, oxigenoterapia, trasplante de pulmón en casos avanzados.
+R "Me falta el aire al caminar y me cuesta respirar hondo. Tengo tos seca y a veces me silba el pecho. Tomo inhaladores para el asma, pero no me hacen mucho efecto. También he tomado antibióticos para la bronquitis, pero la tos no se va. Me preocupa que sea algo más serio..."
+Paciente 131
+E 48 años
+S Femenino
+O Contadora
+S Dolores de cabeza intensos, visión doble, problemas de equilibrio, entumecimiento en las extremidades.
+D
+* Migraña / Anti-migrañosos
+* Hipertensión arterial / Antihipertensivos (medicación actual del paciente)
+D Esclerosis múltiple (EM)
+D
+* E Enfermedad autoinmune que afecta el sistema nervioso central.
+* F El sistema inmunitario ataca la mielina, la capa protectora que recubre las fibras nerviosas, causando problemas de comunicación entre el cerebro y el cuerpo.
+* T Medicamentos modificadores de la enfermedad, terapia física, terapia ocupacional.
+R "Tengo dolores de cabeza muy fuertes, a veces veo doble y me mareo. Siento hormigueo en las manos y los pies, y me cuesta mantener el equilibrio. Tomo pastillas para la migraña y para la presión alta, pero no mejoro mucho. Me preocupa que sea algo neurológico..."
+P132
+E 25 años
+S Masculino
+O Músico
+S Fatiga, palidez, moretones con facilidad, fiebre recurrente, dolor óseo.
+D
+* Anemia / Suplementos de hierro (tratamiento actual del paciente)
+* Mononucleosis / Reposo
+D Leucemia mieloide aguda (LMA)
+D
+* E Cáncer de la sangre que afecta las células mieloides.
+* F Las células leucémicas se multiplican de manera descontrolada, afectando la producción de células sanguíneas normales.
+* T Quimioterapia, trasplante de médula ósea.
+R "Me siento cansado y débil todo el tiempo. Estoy muy pálido y me salen moretones con facilidad. He tenido fiebre varias veces y me duelen los huesos. Tomo hierro para la anemia, pero no mejora mucho. Me preocupa que sea algo más grave..."
+P133
+E 38 años
+S Femenino
+O Diseñadora de moda
+S Dificultad para respirar, tos crónica, dolor en el pecho, pérdida de peso inexplicable.
+D
+* Asma / Inhaladores
+* Reflujo gastroesofágico / Inhibidores de la bomba de protones (medicación actual del paciente)
+D Hipertensión pulmonar
+D
+* E Presión arterial alta en las arterias pulmonares.
+* F La presión alta dificulta el bombeo de sangre del corazón a los pulmones, lo que lleva a dificultad para respirar y otros síntomas.
+* T Medicamentos específicos para la hipertensión pulmonar, oxigenoterapia, trasplante de pulmón en casos avanzados.
+R "Me falta el aire al caminar o subir escaleras. Tengo tos seca y me duele el pecho. He bajado de peso sin querer. El médico me dijo que podía ser asma o reflujo, así que tomo omeprazol, pero no me siento mejor. Me preocupa que sea algo en los pulmones..."
+P134
+E 65 años
+S Masculino
+O Jubilado
+S Dolor abdominal, pérdida de peso, ictericia, heces claras.
+D
+* Cálculos biliares / Colecistectomía
+* Hepatitis / Medicamentos antivirales
+D Cáncer de páncreas
+D
+* E Desconocida, se cree que es una combinación de factores genéticos y ambientales.
+* F Crecimiento de células cancerosas en el páncreas.
+* T Cirugía, quimioterapia, radioterapia.
+R "Me duele la panza, sobre todo del lado derecho, y he bajado mucho de peso. La piel y los ojos se me pusieron amarillos, y las heces son de color claro. El médico pensó que eran piedras en la vesícula o hepatitis, pero las pruebas no dieron nada claro. Estoy preocupado..."
+Paciente 135
+Edad: 42 años
+Sexo: Femenino
+Ocupación: Enfermera
+Síntomas: Fatiga extrema, dolor articular, problemas de memoria, dificultad para concentrarse, depresión.
+Diagnósticos incorrectos:
+* Fibromialgia / Analgésicos
+* Depresión / Antidepresivos (medicación actual del paciente)
+Diagnóstico correcto: Lupus eritematoso sistémico (LES)
+Descripción del diagnóstico correcto:
+* Etiología: Enfermedad autoinmune que puede afectar a múltiples órganos y sistemas.
+* Fisiopatología: El sistema inmunitario ataca los propios tejidos del cuerpo, causando inflamación y daño.
+* Tratamiento: Corticosteroides, inmunosupresores, hidroxicloroquina.
+Relato del paciente: "Me siento agotada y me duelen las articulaciones, sobre todo las manos. También tengo problemas de memoria y me cuesta concentrarme. El médico me dijo que era fibromialgia y depresión, así que tomo antidepresivos, pero no me siento mucho mejor. A veces me salen manchas rojas en la cara y me duele el pecho al respirar..."
+
+
+Paciente 136
+Edad: 28 años
+Sexo: Masculino
+Ocupación: Programador
+Síntomas: Dolor de cabeza intenso, náuseas, vómitos, visión borrosa, convulsiones.
+Diagnósticos incorrectos:
+* Migraña / Anti-migrañosos (medicación actual del paciente)
+* Sinusitis / Antibióticos
+Diagnóstico correcto: Tumor cerebral
+Descripción del diagnóstico correcto:
+* Etiología: Crecimiento anormal de células en el cerebro.
+* Fisiopatología: El tumor puede ejercer presión sobre el tejido cerebral y los nervios, causando diversos síntomas.
+* Tratamiento: Cirugía, radioterapia, quimioterapia.
+Relato del paciente: "Tengo dolores de cabeza muy fuertes, con náuseas y vómitos. A veces veo borroso y hasta he tenido convulsiones. El médico me dijo que era migraña o sinusitis, y tomo pastillas para la migraña, pero no siempre funcionan. Me preocupa que sea algo más grave..."
+
+
+Paciente 137
+Edad: 55 años
+Sexo: Femenino
+Ocupación: Ama de casa
+Síntomas: Diarrea crónica, dolor abdominal, pérdida de peso, fatiga, anemia.
+Diagnósticos incorrectos:
+* Síndrome del intestino irritable / Dieta baja en FODMAP
+* Intolerancia a la lactosa / Dieta sin lactosa (tratamiento actual del paciente)
+Diagnóstico correcto: Enfermedad celíaca
+Descripción del diagnóstico correcto:
+* Etiología: Reacción autoinmune al gluten, una proteína que se encuentra en el trigo, la cebada y el centeno.
+* Fisiopatología: El gluten desencadena una respuesta inmunitaria que daña el intestino delgado, causando malabsorción de nutrientes.
+* Tratamiento: Dieta estricta sin gluten.
+Relato del paciente: "Tengo diarrea y dolor de panza casi todos los días. He bajado mucho de peso y estoy siempre cansada. El médico me dijo que podía ser colon irritable o intolerancia a la lactosa, así que no tomo leche ni derivados, pero no mejora mucho. A veces me siento mareada y con la cabeza liviana..."
+
+
+Paciente 138
+Edad: 34 años
+Sexo: Masculino
+Ocupación: Ingeniero
+Síntomas: Dolor en el pecho, dificultad para respirar, tos persistente, fatiga.
+Diagnósticos incorrectos:
+* Asma / Inhaladores
+* Ansiedad / Ansiolíticos (medicación actual del paciente)
+Diagnóstico correcto: Sarcoidosis
+Descripción del diagnóstico correcto:
+* Etiología: Desconocida, se cree que es autoinmune.
+* Fisiopatología: Formación de granulomas en diferentes órganos, incluyendo los pulmones.
+* Tratamiento: Corticosteroides, otros medicamentos inmunosupresores.
+Relato del paciente: "Me duele el pecho y me cuesta respirar, sobre todo cuando hago ejercicio. Tengo tos seca y me siento cansado. El médico me dijo que podía ser asma o ansiedad, tomo ansiolíticos, pero no me ayudan mucho con la respiración. También tengo los ganglios del cuello inflamados..."
+
+
+Paciente 139: Lucas, 32 años, hombre
+Diagnósticos incorrectos:
+Infección por hongos / Crema antifúngica
+Dermatitis de contacto / Crema de corticosteroides
+Diagnóstico correcto: Psoriasis genital
+Características: Enfermedad autoinmune que causa placas rojas y escamosas en la piel, incluyendo la zona genital.
+Etiología: Desconocida, posiblemente genética y ambiental.
+Tratamiento: Cremas con corticosteroides, terapia de luz, medicamentos inmunosupresores.
+Relato: "He tenido algunos problemas con mis partes íntimas últimamente. Siento picazón y ardor, y me da vergüenza hablar de ello."
+Paciente 140: Ana, 25 años, mujer
+Diagnósticos incorrectos:
+Candidiasis vaginal / Crema antifúngica
+Vaginosis bacteriana / Antibióticos
+Diagnóstico correcto: Tricomoniasis
+Características: Infección de transmisión sexual causada por un parásito.
+Etiología: Contacto sexual sin protección.
+Tratamiento: Antibióticos (metronidazol o tinidazol).
+Relato: "He notado un flujo vaginal diferente y con un olor desagradable. Me da mucha vergüenza ir al médico por esto."
+Paciente 141: Miguel, 48 años, hombre
+Diagnósticos incorrectos:
+Hemorroides / Crema para hemorroides
+Fisura anal / Suavizante de heces
+Diagnóstico correcto: Enfermedad diverticular
+Características: Formación de pequeñas bolsas en el colon, que pueden inflamarse o infectarse.
+Etiología: Dieta baja en fibra, edad avanzada, genética.
+Tratamiento: Dieta alta en fibra, antibióticos (en caso de infección), cirugía (en casos graves).
+Relato: "He tenido problemas para ir al baño últimamente. Siento dolor y a veces hay un poco de sangre. Es incómodo hablar de esto."
+Paciente 142: Sofía, 30 años, mujer
+Diagnósticos incorrectos:
+Quiste benigno / Observación
+Fibroadenoma / Biopsia
+Diagnóstico correcto: Cáncer de mama
+Características: Crecimiento descontrolado de células en el tejido mamario.
+Etiología: Desconocida, posiblemente genética y ambiental.
+Tratamiento: Cirugía, quimioterapia, radioterapia, terapia hormonal.
+Relato: "He notado un bulto en mi pecho que me preocupa. No quiero alarmarme, pero no parece normal."
+Paciente 143: Juan, 55 años, hombre
+Diagnósticos incorrectos:
+Infección urinaria / Antibióticos
+Hiperplasia prostática benigna / Medicamentos
+Diagnóstico correcto: Cáncer de próstata
+Características: Crecimiento descontrolado de células en la glándula prostática.
+Etiología: Desconocida, posiblemente genética y ambiental.
+Tratamiento: Cirugía, radioterapia, terapia hormonal.
+Relato: "Últimamente tengo problemas para orinar. Voy al baño con frecuencia, pero me cuesta mucho y siento ardor. Me da vergüenza hablar de esto con alguien."
+Paciente 144: Maria, 28 años, mujer
+Diagnósticos incorrectos:
+Desequilibrio hormonal / Anticonceptivos
+Estrés / Manejo del estrés
+Diagnóstico correcto: Cáncer de cuello uterino
+Características: Crecimiento descontrolado de células en el cuello uterino.
+Etiología: Infección por el virus del papiloma humano (VPH).
+Tratamiento: Cirugía, radioterapia, quimioterapia.
+Relato: "He tenido cambios en mi ciclo menstrual y sangrado entre períodos. Me preocupa que pueda ser algo grave."
+Paciente 145: Carlos, 42 años, hombre
+Diagnósticos incorrectos:
+Marca de nacimiento / Observación
+Lunar / Biopsia
+Diagnóstico correcto: Melanoma
+Características: Cáncer de piel agresivo que se desarrolla a partir de los melanocitos.
+Etiología: Exposición a la radiación ultravioleta (UV), factores genéticos.
+Tratamiento: Cirugía, quimioterapia, radioterapia, inmunoterapia.
+Relato: "He notado una mancha extraña en mi piel, en una zona íntima. Me da vergüenza mostrarla a alguien."
+Paciente 146: Lucía, 35 años, mujer
+Diagnósticos incorrectos:
+Alergia / Antihistamínicos
+Asma / Inhaladores
+Diagnóstico correcto: Síndrome de hiperventilación
+Características: Respiración rápida y profunda que provoca desequilibrio en los niveles de oxígeno y dióxido de carbono en la sangre, causando mareos, aturdimiento, hormigueo, palpitaciones y ansiedad.
+Etiología: Ansiedad, estrés, factores psicológicos.
+Tratamiento: Técnicas de respiración, manejo de la ansiedad.
+Relato: "He tenido problemas con la sudoración últimamente. Sudo mucho, incluso cuando no hace calor, y me cuesta respirar. Me siento muy ansiosa y me da vergüenza que la gente lo note."
+Paciente 147: Pablo, 22 años, hombre
+Diagnósticos incorrectos:
+Infección por hongos / Crema antifúngica
+Dermatitis de contacto / Crema de corticosteroides
+Diagnóstico correcto: Verrugas genitales (VPH)
+Características: Infección viral que causa verrugas en la zona genital.
+Etiología: Contacto sexual sin protección.
+Tratamiento: Cremas tópicas, crioterapia, electrocauterización, cirugía.
+Relato: "He notado algunas protuberancias extrañas en mi zona íntima, y me da mucha vergüenza mostrárselas a alguien. No sé cómo pudo pasarme esto."
+Paciente 148: Marta, 58 años, mujer
+Diagnósticos incorrectos:
+Infección urinaria / Antibióticos
+Prolapso leve / Ejercicios de Kegel
+Diagnóstico correcto: Fístula recto-vaginal
+Características: Conexión anormal entre el recto y la vagina que permite el paso de heces o gases.
+Etiología: Trauma durante el parto, enfermedad de Crohn, cirugía pélvica, radioterapia.
+Tratamiento: Cirugía.
+Relato: "He tenido algunos problemas con la higiene íntima últimamente. Es muy incómodo y me preocupa que sea algo serio."
+Paciente 149: Roberto, 65 años, hombre
+Diagnósticos incorrectos:
+Hemorroides / Cremas tópicas
+Fisura anal / Suavizantes de heces
+Diagnóstico correcto: Proctitis
+Características: Inflamación del recto que causa dolor, sangrado y secreción.
+Etiología: Infecciones de transmisión sexual, enfermedad inflamatoria intestinal, radiación.
+Tratamiento: Depende de la causa subyacente, puede incluir antibióticos, antivirales, antiinflamatorios o inmunosupresores.
+Relato: "He tenido molestias en la zona rectal, y a veces noto un poco de sangre. Es incómodo hablar de esto, pero me preocupa que sea algo más que hemorroides."
+Paciente 150: Laura, 32 años, mujer
+Diagnósticos incorrectos:
+Vaginitis / Crema antifúngica
+Alergia / Antihistamínicos
+Diagnóstico correcto: Vaginismo
+Características: Espasmos involuntarios de los músculos vaginales que dificultan o impiden la penetración.
+Etiología: Ansiedad, experiencias traumáticas, factores psicológicos.
+Tratamiento: Terapia física del suelo pélvico, terapia sexual, terapia cognitivo-conductual.
+Relato: "He tenido problemas en la intimidad con mi pareja, y me siento frustrada. Es difícil hablar de ello, pero me preocupa que no pueda tener relaciones sexuales."
+Paciente 153: Esteban, 48 años, hombre
+Diagnósticos incorrectos:
+Estrés / Relajación
+Depresión / Antidepresivos
+Diagnóstico correcto: Síndrome de fatiga crónica
+Características: Fatiga persistente e inexplicable que no mejora con el descanso, acompañada de otros síntomas como dolor muscular, problemas de sueño y dificultades cognitivas.
+Etiología: Desconocida, posiblemente factores virales, inmunológicos o neuroendocrinos.
+Tratamiento: Manejo de síntomas (terapia cognitivo-conductual, ejercicio gradual), medicamentos para el dolor y el sueño.
+Relato: "Me siento agotado todo el tiempo, incluso después de dormir mucho. Me cuesta concentrarme y hacer las cosas que solía disfrutar. No sé qué me pasa, pero me preocupa que sea algo serio."
+Paciente 154: Carla, 32 años, mujer
+Diagnósticos incorrectos:
+Infección urinaria / Antibióticos
+Cistitis intersticial / Medicamentos para el dolor
+Diagnóstico correcto: Vulvodinia
+Características: Dolor crónico en la vulva sin causa aparente.
+Etiología: Desconocida, posiblemente factores neurológicos, hormonales o musculares.
+Tratamiento: Medicamentos para el dolor, terapia física del suelo pélvico, terapia cognitivo-conductual.
+Relato: "He tenido molestias en mi zona íntima durante mucho tiempo. Siento ardor y dolor, y es difícil hablar de ello. Me preocupa que sea algo serio y que afecte mi vida sexual."
+Paciente 155: Andrés, 28 años, hombre
+Diagnósticos incorrectos:
+Acné / Cremas tópicas
+Foliculitis / Antibióticos
+Diagnóstico correcto: Hidradenitis supurativa
+Características: Enfermedad inflamatoria crónica de la piel que causa bultos dolorosos e inflamados, principalmente en las axilas y la ingle.
+Etiología: Desconocida, posiblemente factores genéticos y hormonales.
+Tratamiento: Medicamentos antiinflamatorios, antibióticos, inmunosupresores, cirugía.
+Relato: "He tenido algunos problemas en la piel últimamente, con bultos dolorosos en lugares incómodos. Es difícil hablar de ello, pero me preocupa que esté empeorando."
+Paciente 156: Valeria, 45 años, mujer
+Diagnósticos incorrectos:
+Estreñimiento / Laxantes
+Síndrome del intestino irritable / Dieta baja en FODMAP
+Diagnóstico correcto: Prolapso rectal
+Características: Descenso del recto hacia el ano, lo que puede causar dificultad para defecar, incontinencia fecal y sensación de bulto en el ano.
+Etiología: Debilidad del suelo pélvico, parto vaginal, estreñimiento crónico.
+Tratamiento: Ejercicios de Kegel, biofeedback, cirugía.
+Relato: "He tenido problemas para ir al baño últimamente, y siento una presión incómoda en esa zona. Es difícil hablar de ello, pero me preocupa que pueda ser algo serio."
+Paciente 157: Daniel, 34 años, hombre
+Diagnósticos incorrectos:
+Alergia / Antihistamínicos
+Dermatitis de contacto / Cremas de corticosteroides
+Diagnóstico correcto: Vitiligo
+Características: Enfermedad de la piel que causa pérdida de pigmentación, provocando manchas blancas en la piel.
+Etiología: Desconocida, posiblemente autoinmune.
+Tratamiento: Cremas con corticosteroides, fototerapia, injertos de piel.
+Relato: "He notado que me han salido unas manchas blancas en la piel, en zonas visibles. Me preocupa que sea algo contagioso o que se vea mal."
+Paciente 158: Gabriela, 23 años, mujer
+Diagnósticos incorrectos:
+Trastorno de ansiedad generalizada / Ansiolíticos
+Fobia social / Terapia cognitivo-conductual
+Diagnóstico correcto: Trastorno dismórfico corporal (TDC) centrado en una parte específica del cuerpo
+Características: Preocupación excesiva por un defecto percibido en una parte específica del cuerpo, como la nariz, el cabello o la piel.
+Etiología: Desconocida, posiblemente factores genéticos, neurobiológicos y psicosociales.
+Tratamiento: Psicoterapia y medicamentos.
+Relato: "Estoy obsesionada con la forma de mi nariz. La veo enorme y deforme, y siento que todo el mundo se fija en ella. Me da mucha vergüenza salir de casa y evito las fotos..."
+Paciente 159: Jorge, 48 años, hombre
+Diagnósticos incorrectos:
+Depresión / Antidepresivos
+Trastorno bipolar / Estabilizadores del estado de ánimo
+Diagnóstico correcto: Ciclotimia
+Características: Trastorno del estado de ánimo con fluctuaciones cíclicas entre hipomanía y depresión leve.
+Etiología: Desconocida, posiblemente factores genéticos y neuroquímicos.
+Tratamiento: Psicoterapia y medicamentos.
+Relato: "Mi estado de ánimo es como una montaña rusa. A veces estoy lleno de energía y con muchas ideas, pero otras veces me siento triste y sin motivación. Es difícil mantener un equilibrio..."
+Paciente 160: Mariana, 32 años, mujer
+Diagnósticos incorrectos:
+Trastorno de pánico / Benzodiazepinas
+Agorafobia / Terapia de exposición
+Diagnóstico correcto: Trastorno de ansiedad por separación
+Características: Miedo o ansiedad excesiva ante la separación de las figuras de apego.
+Etiología: Factores genéticos, neurobiológicos y ambientales.
+Tratamiento: Psicoterapia y medicamentos.
+Relato: "Me aterra estar lejos de mi familia. Me pongo muy ansiosa cuando no están cerca, y pienso que algo malo les puede pasar. Evito salir de casa sola y me cuesta mucho dormir si no están conmigo..."
+Paciente 161: Antonio, 55 años, hombre
+Diagnósticos incorrectos:
+Demencia / Inhibidores de la colinesterasa
+Trastorno delirante / Antipsicóticos
+Diagnóstico correcto: Síndrome de Geschwind
+Características: Trastorno neurológico asociado a la epilepsia del lóbulo temporal. Hiperreligiosidad, hipergrafía, cambios de personalidad.
+Etiología: Actividad eléctrica anormal en el cerebro, particularmente en el lóbulo temporal.
+Tratamiento: Anticonvulsivos y terapia.
+Relato: "Desde que empecé a tener convulsiones, me siento diferente. Me he vuelto muy religioso, escribo mucho y tengo visiones. Mi familia dice que he cambiado..."
+Paciente 162: Claudia, 28 años, mujer
+Diagnósticos incorrectos:
+Trastorno de ansiedad social / Terapia cognitivo-conductual
+Trastorno de personalidad por evitación / Psicoterapia
+Diagnóstico correcto: Trastorno de identidad de la integridad corporal (BIID)
+Características: Deseo intenso de amputarse una o más extremidades sanas.
+Etiología: Desconocida, posiblemente factores neurológicos y psicológicos.
+Tratamiento: Psicoterapia.
+Relato: "Siento que mis piernas no me pertenecen, que deberían ser amputadas. Sé que suena extraño, pero es un deseo muy fuerte que no puedo controlar..."
+Paciente 163: David, 42 años, hombre
+Diagnósticos incorrectos:
+Sinusitis crónica / Antibióticos y descongestionantes
+Rinitis alérgica / Antihistamínicos
+Diagnóstico correcto: Síndrome de la nariz vacía
+Características: Sensación de obstrucción nasal a pesar de tener las fosas nasales despejadas, a menudo después de una cirugía nasal.
+Etiología: Daño a las estructuras nasales y alteración del flujo de aire.
+Tratamiento: Manejo de síntomas (humidificadores, irrigación nasal), medicamentos (corticosteroides nasales), cirugía (en algunos casos).
+Relato: "Después de la cirugía de la nariz, siento que no puedo respirar bien. Es como si tuviera la nariz tapada todo el tiempo, pero el médico dice que está despejada. Es muy frustrante..."
+Paciente 164: Sarah, 28 años, mujer
+Diagnósticos incorrectos:
+Alergia alimentaria / Dieta de eliminación
+Síndrome del intestino irritable / Dieta baja en FODMAP
+Diagnóstico correcto: Síndrome de auto-cervecería
+Características: Fermentación de carbohidratos en el intestino, produciendo alcohol y causando síntomas de intoxicación.
+Etiología: Crecimiento excesivo de levaduras en el intestino.
+Tratamiento: Dieta baja en carbohidratos, antifúngicos.
+Relato: "Me siento mareada y desorientada después de comer, como si estuviera borracha, pero no he bebido alcohol. Es muy extraño y me preocupa..."
+Paciente 165: Miguel, 35 años, hombre
+Diagnósticos incorrectos:
+Trastorno de ansiedad generalizada / Ansiolíticos
+Hipocondría / Psicoterapia
+Diagnóstico correcto: Síndrome de la mano ajena
+Características: La mano se mueve involuntariamente y realiza acciones sin el control consciente de la persona.
+Etiología: Daño cerebral, como un accidente cerebrovascular o un tumor.
+Tratamiento: Terapia ocupacional, manejo de síntomas (toxina botulínica).
+Relato: "Mi mano izquierda se mueve sola, como si tuviera vida propia. Es como si no fuera mía. Me da miedo y me preocupa..."
+Paciente 166: Sofía, 52 años, mujer
+Diagnósticos incorrectos:
+Depresión / Antidepresivos
+Trastorno bipolar / Estabilizadores del estado de ánimo
+Diagnóstico correcto: Síndrome de Cotard
+Características: Delirio de negación en el que la persona cree estar muerta, no existir o que le faltan órganos internos.
+Etiología: Desconocida, posiblemente relacionada con daño cerebral o trastornos psiquiátricos.
+Tratamiento: Antipsicóticos, antidepresivos, terapia electroconvulsiva.
+Relato: "Siento que no existo, que estoy muerta. Es una sensación horrible, como si fuera un fantasma. Sé que suena loco, pero es lo que siento..."
+Paciente 167: Juan, 48 años, hombre
+Diagnósticos incorrectos:
+Psoriasis / Cremas tópicas
+Dermatitis de contacto / Corticosteroides
+Diagnóstico correcto: Fibrodisplasia osificante progresiva (FOP)
+Características: Formación de hueso en músculos, tendones y ligamentos, causando rigidez y limitación del movimiento.
+Etiología: Mutación genética.
+Tratamiento: Manejo de síntomas (analgésicos, fisioterapia), investigación de nuevos tratamientos.
+Relato: "Mi cuerpo se está convirtiendo en piedra. Mis músculos se están volviendo rígidos, y me cuesta moverme. Es como si me estuviera petrificando..."
+Paciente 168: Valentina, 35 años, mujer
+Diagnósticos incorrectos:
+Alergia / Antihistamínicos
+Dermatitis / Cremas tópicas
+Diagnóstico correcto: Síndrome de la piel azul
+Características: Coloración azulada de la piel debido a la presencia de altos niveles de metahemoglobina en la sangre.
+Etiología: Genética, exposición a ciertos medicamentos o químicos.
+Tratamiento: Depende de la causa, puede incluir medicamentos, terapia de oxígeno o flebotomía.
+Relato: "Mi piel se ha vuelto azulada, y la gente me mira raro. No sé qué me pasa, pero me preocupa que sea algo grave..."
+Paciente 169: Ana, 25 años, mujer
+Diagnósticos incorrectos:
+Alergia / Antihistamínicos
+Asma / Inhaladores
+Diagnóstico correcto: Síndrome de hiperlaxitud articular (Síndrome de Ehlers-Danlos)
+Características: Hipermovilidad articular, piel elástica, fragilidad de los vasos sanguíneos y tejidos conectivos.
+Etiología: Mutación en genes que codifican colágeno u otras proteínas del tejido conectivo.
+Tratamiento: Manejo de síntomas (fisioterapia, terapia ocupacional), prevención de lesiones.
+Relato: "Soy muy flexible, puedo doblarme de formas que la mayoría de la gente no puede. Pero también me disloco las articulaciones con facilidad y me salen moretones sin motivo aparente."
+Paciente 170: Juan, 42 años, hombre
+Diagnósticos incorrectos:
+Vitíligo / Fototerapia
+Albinismo / Protección solar
+Diagnóstico correcto: Piebaldismo
+Características: Manchas blancas en la piel y el cabello debido a la falta de melanocitos.
+Etiología: Mutación en el gen KIT.
+Tratamiento: Ninguno específico, opciones cosméticas como maquillaje o tintes para el cabello.
+Relato: "Tengo manchas blancas en mi piel y cabello desde que nací. La gente a veces me mira raro, como si tuviera una enfermedad contagiosa."
+Paciente 171: Sofia, 32 años, mujer
+Diagnósticos incorrectos:
+Insomnio / Pastillas para dormir
+Apnea del sueño / CPAP
+Diagnóstico correcto: Síndrome de Kleine-Levin
+Características: Episodios recurrentes de somnolencia excesiva, alteraciones del comportamiento y aumento del apetito.
+Etiología: Desconocida, posible base genética.
+Tratamiento: Manejo de los síntomas, medicamentos para estabilizar el estado de ánimo y el sueño.
+Relato: "Tengo episodios en los que duermo durante días y días. Cuando despierto, estoy desorientada y tengo mucha hambre. Es como si perdiera días de mi vida."
+Paciente 172: Marcos, 28 años, hombre
+Diagnósticos incorrectos:
+Síndrome del intestino irritable / Dieta baja en FODMAP
+Enfermedad celíaca / Dieta sin gluten
+Diagnóstico correcto: Enfermedad de Fabry
+Características: Acumulación de un tipo de grasa en las células del cuerpo, causando dolor, problemas renales y cardíacos.
+Etiología: Mutación en el gen GLA.
+Tratamiento: Terapia de reemplazo enzimático, manejo de síntomas.
+Relato: "Tengo dolores intensos en las manos y los pies, y a veces siento ardor en la piel. Me preocupa que sea algo grave, pero los médicos no encuentran nada."
+Paciente 173: Laura, 45 años, mujer
+Diagnósticos incorrectos:
+Artritis reumatoide / Antiinflamatorios
+Lupus / Inmunosupresores
+Diagnóstico correcto: Síndrome de Marfan
+Características: Estatura alta, extremidades largas, problemas oculares y cardíacos.
+Etiología: Mutación en el gen FBN1.
+Tratamiento: Control de la presión arterial, prevención de aneurismas aórticos, corrección quirúrgica de problemas oculares y esqueléticos.
+Relato: "Siempre he sido muy alta y delgada, con brazos y piernas largas. Últimamente, me he dado cuenta de que veo borroso de lejos y me canso con facilidad."
+Paciente 174: Pablo, 30 años, hombre
+Diagnósticos incorrectos:
+Acné / Cremas tópicas
+Rosácea / Antibióticos
+Diagnóstico correcto: Síndrome de Proteus
+Características: Crecimiento excesivo de piel, huesos, vasos sanguíneos y otros tejidos.
+Etiología: Mutación en el gen AKT1.
+Tratamiento: Manejo de síntomas, cirugía para controlar el crecimiento de tejidos.
+Relato: "Algunas partes de mi cuerpo son más grandes de lo normal, y siguen creciendo. Es incómodo y me preocupa cómo se ve."
+Paciente 175: Julia, 25 años, mujer
+Diagnósticos incorrectos:
+Deficiencia de hierro / Suplementos de hierro
+Problemas de tiroides / Medicamentos para la tiroides
+Diagnóstico correcto: Porfiria eritropoyética congénita (Enfermedad de Günther)
+Características: Sensibilidad extrema a la luz solar, anemia, coloración rojiza de la orina.
+Etiología: Mutación en genes involucrados en la producción de hemo.
+Tratamiento: Evitar la luz solar, transfusiones de sangre, trasplante de médula ósea.
+Relato: "Soy muy sensible a la luz del sol, me quemo con mucha facilidad y mi piel se llena de ampollas. También me siento cansada y débil la mayor parte del tiempo."
+Paciente 176: Daniel, 38 años, hombre
+Diagnósticos incorrectos:
+Esclerosis múltiple / Medicamentos modificadores de la enfermedad
+Esclerosis lateral amiotrófica (ELA) / Riluzol
+Diagnóstico correcto: Ataxia de Friedreich
+Características: Pérdida de coordinación muscular, dificultad para caminar, problemas del habla.
+Etiología: Mutación en el gen FXN.
+Tratamiento: Manejo de síntomas (fisioterapia, terapia ocupacional), investigación de nuevos tratamientos.
+Relato: "Últimamente me tropiezo mucho y me cuesta mantener el equilibrio. También siento debilidad en las piernas y me tiemblan las manos."
+Paciente 177: Carla, 52 años, mujer
+Diagnósticos incorrectos:
+Artritis / Antiinflamatorios
+Fibromialgia / Analgésicos
+Diagnóstico correcto: Síndrome de Ehlers-Danlos vascular
+Características: Fragilidad de los vasos sanguíneos y órganos internos, piel fina y translúcida.
+Etiología: Mutación en el gen COL3A1.
+Tratamiento: Manejo de síntomas, prevención de lesiones, cirugía para tratar complicaciones vasculares.
+Relato: "Mi piel es muy delgada y se me marcan las venas con facilidad. También me salen moretones con pequeños golpes, y me preocupan las complicaciones que pueda tener."
+Paciente 178: Martín, 29 años, hombre
+Diagnósticos incorrectos:
+Enfermedad celíaca / Dieta sin gluten
+Síndrome del intestino irritable / Dieta baja en FODMAP
+Diagnóstico correcto: Fibrosis quística
+Características: Enfermedad genética que afecta principalmente los pulmones y el sistema digestivo, causando acumulación de moco espeso y pegajoso.
+Etiología: Mutación en el gen CFTR.
+Tratamiento: Terapia respiratoria, enzimas pancreáticas, antibióticos, trasplante de pulmón en casos avanzados.
+Relato: "He tenido problemas respiratorios y digestivos desde que era pequeño. Siempre estoy tosiendo y tengo dificultad para respirar. También tengo problemas para digerir los alimentos y he perdido peso. Es difícil vivir con esto."
+Paciente 179: Paula, 42 años, mujer
+Diagnósticos incorrectos:
+Migraña / Analgésicos
+Sinusitis / Antibióticos
+Diagnóstico correcto: Enfermedad de Huntington
+Características: Enfermedad neurodegenerativa que causa movimientos involuntarios, problemas psiquiátricos y deterioro cognitivo.
+Etiología: Mutación en el gen HTT.
+Tratamiento: Manejo de síntomas (medicamentos para los movimientos involuntarios, antidepresivos, antipsicóticos), terapia física y ocupacional.
+Relato: "Últimamente me he vuelto torpe y me tiemblan las manos. También tengo cambios de humor y me cuesta concentrarme. Me preocupa que pueda ser algo hereditario."
+Paciente 180: Tomás, 35 años, hombre
+Diagnósticos incorrectos:
+Síndrome de Tourette / Medicamentos
+Trastorno obsesivo-compulsivo (TOC) / Terapia
+Diagnóstico correcto: Síndrome del hombre lobo
+Características: Crecimiento excesivo de vello en todo el cuerpo.
+Etiología: Mutación genética rara.
+Tratamiento: Depilación láser, electrólisis, medicamentos para reducir el crecimiento del vello.
+Relato: "Desde que era niño, tengo mucho más vello corporal que otras personas. Crece en lugares inusuales, y es muy difícil de controlar. Me siento como un monstruo..."
+Paciente 181: Clara, 28 años, mujer
+Diagnósticos incorrectos:
+Psoriasis / Cremas tópicas
+Ictiosis / Emolientes
+Diagnóstico correcto: Epidermodisplasia verruciforme
+Características: Susceptibilidad extrema al virus del papiloma humano (VPH), que causa el crecimiento de verrugas grandes y gruesas en la piel.
+Etiología: Mutación genética que afecta el sistema inmunitario.
+Tratamiento: Cirugía para extirpar las verrugas, manejo de síntomas.
+Relato: "Me salen verrugas en la piel, pero no son como las que le salen a otras personas. Son más grandes, más gruesas y no se van con ningún tratamiento. Es como si tuviera la piel de un árbol...
+Paciente 180: Tomás, 35 años, hombre
+Diagnósticos incorrectos:
+Síndrome de Tourette / Medicamentos
+Trastorno obsesivo-compulsivo (TOC) / Terapia
+Diagnóstico correcto: Síndrome del hombre lobo
+Características: Crecimiento excesivo de vello en todo el cuerpo.
+Etiología: Mutación genética rara.
+Tratamiento: Depilación láser, electrólisis, medicamentos para reducir el crecimiento del vello.
+Relato: "Desde que era niño, tengo mucho más vello corporal que otras personas. Crece en lugares inusuales, y es muy difícil de controlar. Me siento como un monstruo..."
+Paciente 181: Clara, 28 años, mujer
+Diagnósticos incorrectos:
+Psoriasis / Cremas tópicas
+Ictiosis / Emolientes
+Diagnóstico correcto: Epidermodisplasia verruciforme
+Características: Susceptibilidad extrema al virus del papiloma humano (VPH), que causa el crecimiento de verrugas grandes y gruesas en la piel.
+Etiología: Mutación genética que afecta el sistema inmunitario.
+Tratamiento: Cirugía para extirpar las verrugas, manejo de síntomas.
+Relato: "Me salen verrugas en la piel, pero no son como las que le salen a otras personas. Son más grandes, más gruesas y no se van con ningún tratamiento. Es como si tuviera la piel de un árbol...
+Paciente 182: Lucía, 35 años, mujer
+Diagnósticos incorrectos:
+Conjuntivitis alérgica / Antihistamínicos y gotas oculares
+Ojo seco / Lágrimas artificiales
+Diagnóstico correcto: Thelaziasis
+Características: Infestación por gusanos nematodos en los ojos, transmitidos por moscas que se alimentan de las lágrimas.
+Etiología: Contacto con moscas infectadas.
+Tratamiento: Extracción de los gusanos con pinzas o cirugía, medicamentos antiparasitarios.
+Relato: "Siento que tengo algo moviéndose en mi ojo, es una sensación muy molesta. He probado gotas para la alergia y la sequedad, pero no mejora."
+Paciente 183: Tomás, 42 años, hombre
+Diagnósticos incorrectos:
+Psoriasis / Cremas tópicas
+Dermatitis / Corticosteroides
+Diagnóstico correcto: Tungiasis
+Características: Infestación por pulgas de arena que se entierran en la piel, generalmente en los pies, causando picazón, inflamación y dolor.
+Etiología: Contacto con suelo contaminado con pulgas de arena.
+Tratamiento: Extracción de las pulgas con pinzas, limpieza de las heridas, antibióticos en caso de infección.
+Relato: "Tengo unas lesiones extrañas en los pies que pican mucho. Parece que tengo algo enterrado en la piel."
+Paciente 184: Gabriela, 28 años, mujer
+Diagnósticos incorrectos:
+Dolor abdominal inespecífico / Analgésicos
+Síndrome del intestino irritable / Dieta baja en FODMAP
+Diagnóstico correcto: Anisakiasis
+Características: Infestación por larvas de gusanos anisakis, adquirida por el consumo de pescado crudo o poco cocinado. Causa dolor abdominal severo, náuseas, vómitos y diarrea.
+Etiología: Consumo de pescado infectado con larvas de anisakis.
+Tratamiento: Extracción endoscópica de las larvas, medicamentos antiparasitarios en algunos casos.
+Relato: "Después de comer sushi, empecé con un dolor de estómago terrible, náuseas y vómitos. Siento como si tuviera algo moviéndose dentro de mi abdomen."
+Paciente 185: Martín, 35 años, hombre
+Diagnósticos incorrectos:
+Sinusitis / Antibióticos
+Rinitis alérgica / Antihistamínicos
+Diagnóstico correcto: Miasis nasal
+Características: Infestación por larvas de mosca en la cavidad nasal, causando congestión, dolor, sangrado y secreción maloliente.
+Etiología: Moscas que depositan huevos en la nariz, generalmente en personas con higiene deficiente o en zonas tropicales.
+Tratamiento: Extracción de las larvas con pinzas o aspiración, antibióticos en caso de infección.
+Relato: "Tengo una congestión nasal que no mejora con nada. Siento que hay algo moviéndose dentro de mi nariz, y la secreción huele muy mal."
+Paciente 186: Sofía, 52 años, mujer
+Diagnósticos incorrectos:
+Migraña / Analgésicos
+Neuralgia del trigémino / Anticonvulsivos
+Diagnóstico correcto: Cisticercosis
+Características: Infestación por larvas de tenia en el cerebro, músculos u otros tejidos, causando una variedad de síntomas dependiendo de la ubicación de los quistes.
+Etiología: Ingestión de huevos de tenia a través de alimentos o agua contaminados.
+Tratamiento: Medicamentos antiparasitarios, cirugía en algunos casos para eliminar los quistes.
+Relato: "He tenido dolores de cabeza muy fuertes y problemas de visión. A veces siento que algo se mueve dentro de mi cabeza."
+Paciente 187: Gabriela, 28 años, mujer
+Diagnósticos incorrectos:
+Dolor abdominal inespecífico / Analgésicos
+Síndrome del intestino irritable / Dieta baja en FODMAP
+Diagnóstico correcto: Anisakiasis
+Características: Infestación por larvas de gusanos anisakis, adquirida por el consumo de pescado crudo o poco cocinado. Causa dolor abdominal severo, náuseas, vómitos y diarrea.
+Etiología: Consumo de pescado infectado con larvas de anisakis.
+Tratamiento: Extracción endoscópica de las larvas, medicamentos antiparasitarios en algunos casos.
+Relato: "Después de comer sushi, empecé con un dolor de estómago terrible, náuseas y vómitos. Siento como si tuviera algo moviéndose dentro de mi abdomen."
+Paciente 188: Martín, 35 años, hombre
+Diagnósticos incorrectos:
+Sinusitis / Antibióticos
+Rinitis alérgica / Antihistamínicos
+Diagnóstico correcto: Miasis nasal
+Características: Infestación por larvas de mosca en la cavidad nasal, causando congestión, dolor, sangrado y secreción maloliente.
+Etiología: Moscas que depositan huevos en la nariz, generalmente en personas con higiene deficiente o en zonas tropicales.
+Tratamiento: Extracción de las larvas con pinzas o aspiración, antibióticos en caso de infección.
+Relato: "Tengo una congestión nasal que no mejora con nada. Siento que hay algo moviéndose dentro de mi nariz, y la secreción huele muy mal."
+Paciente 189: Sofía, 52 años, mujer
+Diagnósticos incorrectos:
+Migraña / Analgésicos
+Neuralgia del trigémino / Anticonvulsivos
+Diagnóstico correcto: Cisticercosis
+Características: Infestación por larvas de tenia en el cerebro, músculos u otros tejidos, causando una variedad de síntomas dependiendo de la ubicación de los quistes.
+Etiología: Ingestión de huevos de tenia a través de alimentos o agua contaminados.
+Tratamiento: Medicamentos antiparasitarios, cirugía en algunos casos para eliminar los quistes.
+Relato: "He tenido dolores de cabeza muy fuertes y problemas de visión. A veces siento que algo se mueve dentro de mi cabeza."
+Paciente 190: Carlos, 48 años, hombre
+Diagnósticos incorrectos:
+Alergias / Antihistamínicos
+Dermatitis / Cremas tópicas
+Diagnóstico correcto: Escabiosis
+Características: Infestación por ácaros que se introducen en la piel, causando picazón intensa, especialmente por la noche.
+Etiología: Contacto directo con una persona infectada o con objetos contaminados.
+Tratamiento: Cremas o lociones escabicidas para matar los ácaros, lavado de ropa y ropa de cama con agua caliente.
+Relato: "Tengo una picazón insoportable en todo el cuerpo, especialmente por la noche. No puedo dormir, y me siento muy incómodo."
+Paciente 191: Marta, 24 años, mujer
+Diagnósticos incorrectos:
+Dolor muscular / Analgésicos
+Fibromialgia / Antidepresivos
+Diagnóstico correcto: Triquinosis
+Características: Infestación por larvas de Trichinella spiralis, adquirida por el consumo de carne de cerdo o animales salvajes poco cocida. Causa dolor muscular, fiebre, hinchazón facial y eosinofilia.
+Etiología: Consumo de carne infectada con larvas de Trichinella.
+Tratamiento: Medicamentos antiparasitarios, corticosteroides para reducir la inflamación.
+Relato: "Me duelen todos los músculos, y me siento muy débil. También tengo fiebre e hinchazón en la cara. No sé qué me pasa."
+Paciente 192: Lucas, 32 años, hombre
+Diagnósticos incorrectos:
+Infección urinaria / Antibióticos
+Cálculos renales / Litotricia
+Diagnóstico correcto: Esquistosomiasis urogenital
+Características: Infección por gusanos parásitos que afecta el sistema urinario y genital, causando sangre en la orina, dolor al orinar y problemas de fertilidad.
+Etiología: Contacto con agua dulce contaminada con larvas de esquistosomas.
+Tratamiento: Medicamentos antiparasitarios.
+Relato: "He notado sangre en mi orina, y me preocupa que sea algo grave. También siento dolor al orinar. No sé qué me pasa."
+Paciente 193: Ana, 45 años, mujer
+Diagnósticos incorrectos:
+Alergia / Antihistamínicos
+Asma / Inhaladores
+Diagnóstico correcto: Estrongiloidiasis
+Características: Infección por larvas de nematodos que penetran la piel y migran a través del cuerpo, causando problemas respiratorios, digestivos y cutáneos.
+Etiología: Contacto con suelo contaminado con larvas de estrongiloides.
+Tratamiento: Medicamentos antiparasitarios.
+Relato: "Tengo tos, dificultad para respirar y dolor de estómago. También me han salido unas ronchas en la piel que pican mucho."
+Paciente 194: Juan, 28 años, hombre
+Diagnósticos incorrectos:
+Apendicitis / Apendicectomía
+Diverticulitis / Antibióticos
+Diagnóstico correcto: Teniasis
+Características: Infección por tenias adultas en el intestino, que pueden causar dolor abdominal, diarrea, pérdida de peso y malestar general.
+Etiología: Consumo de carne de res o cerdo mal cocida que contiene larvas de tenia.
+Tratamiento: Medicamentos antiparasitarios.
+Relato: "Tengo dolor de estómago, diarrea y he perdido peso sin querer. No sé qué me pasa, pero me siento muy mal."
+Paciente 195: Sofía, 35 años, mujer
+Diagnósticos incorrectos:
+Sinusitis / Antibióticos
+Rinitis alérgica / Antihistamínicos
+Diagnóstico correcto: Miasis cutánea
+Características: Infestación por larvas de mosca en la piel, que causan lesiones dolorosas y con secreción.
+Etiología: Moscas que depositan huevos en heridas o piel lesionada.
+Tratamiento: Extracción de las larvas, limpieza de las heridas, antibióticos en caso de infección.
+Relato: "Tengo una herida que no cicatriza, y ahora hay gusanos saliendo de ella. Es asqueroso y me da mucho miedo."
+Paciente 196: Miguel, 52 años, hombre
+Diagnósticos incorrectos:
+Fatiga / Vitaminas
+Depresión / Antidepresivos
+Diagnóstico correcto: Tripanosomiasis africana (enfermedad del sueño)
+Características: Enfermedad parasitaria transmitida por la mosca tsetsé, que afecta el sistema nervioso central y causa trastornos del sueño, cambios de comportamiento y, finalmente, coma y muerte si no se trata.
+Etiología: Picadura de la mosca tsetsé infectada con el parásito Trypanosoma brucei.
+Tratamiento: Medicamentos antiparasitarios, dependiendo de la etapa de la enfermedad.
+Relato: "Me siento muy cansado y somnoliento todo el tiempo, y tengo cambios de humor. No sé qué me pasa, pero estoy muy preocupado."
+Paciente 197: Laura, 28 años, mujer
+Diagnósticos incorrectos:
+Alergias / Antihistamínicos
+Dermatitis / Cremas tópicas
+Diagnóstico correcto: Larva migratoria cutánea
+Características: Infestación por larvas de anquilostomas que penetran la piel y causan erupciones cutáneas con picazón intensa y trayectos serpenteantes visibles.
+Etiología: Contacto con suelo contaminado con heces de animales infectados con anquilostomas.
+Tratamiento: Medicamentos antiparasitarios tópicos o orales.
+Relato: "Tengo unas erupciones en la piel que pican muchísimo y que parecen líneas rojas que se mueven. No sé qué puede ser, pero es muy molesto."
+Paciente 198: Juan, 35 años, hombre
+Diagnósticos incorrectos:
+Apendicitis / Apendicectomía
+Diverticulitis / Antibióticos
+Diagnóstico correcto: Gnatostomiasis
+Características: Infestación por larvas de gusanos Gnathostoma, adquirida por el consumo de pescado o carne de animales de agua dulce crudos o poco cocinados. Causa dolor abdominal, fiebre, lesiones cutáneas migratorias y, en casos graves, afectación del sistema nervioso central.
+Etiología: Consumo de pescado o carne de animales de agua dulce infectados con larvas de Gnathostoma.
+Tratamiento: Medicamentos antiparasitarios, cirugía en algunos casos para eliminar las larvas.
+Relato: "He tenido dolores de estómago fuertes, fiebre y unas protuberancias que aparecen y desaparecen en diferentes partes de mi cuerpo. No sé qué puede ser, pero me preocupa."
+Paciente 199: María, 48 años, mujer
+Diagnósticos incorrectos:
+Problemas digestivos / Antiácidos
+Colon irritable / Dieta baja en FODMAP
+Diagnóstico correcto: Echinococcosis
+Características: Infestación por larvas de tenia Echinococcus, que forman quistes en diferentes órganos, principalmente el hígado y los pulmones.
+Etiología: Ingestión de huevos de Echinococcus a través de alimentos o agua contaminados, o contacto con animales infectados (perros, ovejas).
+Tratamiento: Cirugía para extirpar los quistes, medicamentos antiparasitarios.
+Relato: "Tengo un dolor constante en el lado derecho del abdomen, y me siento hinchada. Los médicos no encuentran nada, pero me preocupa que pueda ser algo grave."
+Paciente 200: Carlos, 28 años, hombre
+Diagnósticos incorrectos:
+Amigdalitis / Antibióticos
+Mononucleosis / Reposo
+Diagnóstico correcto: Miasis faríngea
+Características: Infestación por larvas de mosca en la garganta, causando dolor, dificultad para tragar, tos y sensación de cuerpo extraño.
+Etiología: Moscas que depositan huevos en la boca o la nariz, especialmente en personas con mala higiene bucal o en zonas tropicales.
+Tratamiento: Extracción de las larvas con pinzas o aspiración.
+Relato: "Tengo un dolor de garganta terrible y me cuesta tragar. Siento como si tuviera algo atorado en la garganta, pero no sé qué es."
+   *
+def doctor_casa():
+  """
+  Función principal del juego Doctor Casa.
+  """
+  puntaje = 0
+  pacientes_muertos = 0
+  pacientes_salvados = 0
+
+
+  # Cargar los datos del archivo
+  with open("DatabaseDrCasa.txt", "r") as f:
+    datos = f.read().splitlines()
+
+
+  # Iterar sobre los pacientes de forma aleatoria
+  while datos:
+    paciente_data = random.choice(datos)
+    datos.remove(paciente_data)
+    paciente = paciente_data.split("D")
+    relato, opciones = paciente[0], paciente[1:]
+
+
+    # Mostrar el relato del paciente
+    print(f"\nPaciente: {relato}")
+
+
+    # Mezclar las opciones y agregar el tiempo de respuesta
+    opciones_mezcladas = random.sample(opciones, len(opciones))
+    tiempo_inicio = time.time()
+
+
+    # Mostrar las opciones y obtener la respuesta del jugador
+    for i, opcion in enumerate(opciones_mezcladas):
+      print(f"{i+1}. {opcion.strip()}")
+    respuesta = input("\n¿Cuál es el diagnóstico y tratamiento correctos? (1-3): ")
+
+
+    # Calcular el tiempo de respuesta
+    tiempo_final = time.time()
+    tiempo_respuesta = tiempo_final - tiempo_inicio
+
+
+    # Evaluar la respuesta del jugador
+    if tiempo_respuesta > 45:
+      print("\n¡Tiempo agotado! Doctor Casa, asesinaste a tu paciente.")
+      pacientes_muertos += 1
+    elif opciones_mezcladas[int(respuesta)-1] == opciones[0]:
+      print("\n¡Doctor Casa salvaste una vida más!")
+      print(f"\nCaracterísticas: {opciones[0].split('\"')[1]}")
+      print(f"Tratamiento: {opciones[0].split('\"')[3]}")
+      print(f"Funcionamiento del tratamiento: {opciones[0].split('\"')[5]}")
+      pacientes_salvados += 1
+      # Asignar puntos en base a la rapidez de la respuesta
+      puntaje += max(0, 45 - int(tiempo_respuesta)) * 10
+    else:
+      print("\nDoctor Casa, asesinaste a tu paciente.")
+      pacientes_muertos += 1
+
+
+  # Mostrar resultados finales
+  print(f"\n--- Fin del juego ---")
+  print(f"Pacientes salvados: {pacientes_salvados}")
+  print(f"Pacientes muertos: {pacientes_muertos}")
+  print(f"Puntaje final: {puntaje}")
+
+
+if __name__ == "__main__":
+  doctor_casa()
